@@ -75,9 +75,9 @@
     "unplugin-vue-components": "0.17.21",
     "vite": "2.8.6",
     "vite-plugin-checker": "0.4.2",
-    "vite-plugin-inspect": "0.3.15",
+    "vite-plugin-inspect": "0.4.3",
     "vite-plugin-md": "0.11.8",
-    "vite-plugin-pages": "0.20.2",
+    "vite-plugin-pages": "0.21.4",
     "vite-plugin-pwa": "0.11.13",
     "vite-plugin-vue-layouts": "0.6.0",
     "vite-ssg": "0.17.11",
@@ -85,7 +85,7 @@
     "vue-demi": "0.12.1",
     "vue-eslint-parser": "8.3.0",
     "vue-i18n": "9.1.9",
-    "vue-tsc": "0.29.8",
+    "vue-tsc": "0.32.1",
     "workbox-window": "6.5.1"
   }
 }
