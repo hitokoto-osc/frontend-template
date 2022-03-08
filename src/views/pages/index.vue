@@ -14,20 +14,16 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <div text-4xl>
-      <div i-carbon-campsite inline-block />
+    <div class="logo">
+      <img src="/favicon.svg" alt="logo" />
     </div>
     <p>
-      <a
-        rel="noreferrer"
-        href="https://github.com/antfu/vitesse"
-        target="_blank"
-      >
-        Vitesse
+      <a rel="noreferrer" href="https://github.com/hiokoto-osc" target="_blank">
+        @hitokoto-osc
       </a>
     </p>
     <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
+      <em class="desc">{{ t('intro.desc') }}</em>
     </p>
 
     <div py-4 />
@@ -56,6 +52,17 @@ const { t } = useI18n()
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.demo {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+}
+</style>
 
 <route lang="yaml">
 meta:

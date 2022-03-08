@@ -2,8 +2,9 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 // Obfuscator
-import obfuscator from 'rollup-plugin-obfuscator'
-import { ObfuscatorOptions } from 'javascript-obfuscator'
+// 与 Vite-ssg 冲突，需要修复
+// import obfuscator from 'rollup-plugin-obfuscator'
+// import { ObfuscatorOptions } from 'javascript-obfuscator'
 
 // Vite plugins
 import Vue from '@vitejs/plugin-vue'
@@ -14,7 +15,7 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 // import SassDts from 'vite-plugin-sass-dts'
-import SvgLoader from 'vite-svg-loader'
+// import SvgLoader from 'vite-svg-loader'
 // import Compression from 'vite-plugin-compression'
 import Checker from 'vite-plugin-checker'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
@@ -25,6 +26,7 @@ import LinkAttributes from 'markdown-it-link-attributes'
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 // Obfuscator Options
+/*
 const obfuscatorConfig: ObfuscatorOptions = {
   compact: true,
   controlFlowFlattening: true,
@@ -56,7 +58,7 @@ const obfuscatorConfig: ObfuscatorOptions = {
   transformObjectKeys: true,
   unicodeEscapeSequence: false
 }
-
+*/
 // https://vitejs.dev/config/
 export default defineConfig({
   /*
@@ -77,7 +79,9 @@ export default defineConfig({
     }
   },
   */
+  publicDir: './public',
   build: {
+    /*
     rollupOptions: {
       output: {
         plugins: [
@@ -88,6 +92,7 @@ export default defineConfig({
         ]
       }
     }
+    */
   },
   plugins: [
     Vue({
@@ -145,7 +150,8 @@ export default defineConfig({
     }),
 
     // https://github.com/jpkleemans/vite-svg-loader
-    SvgLoader(),
+    // conflict with PWA
+    // SvgLoader(),
 
     // https://github.com/fi3ework/vite-plugin-checker
     // Blocked by https://github.com/fi3ework/vite-plugin-checker/issues/115
@@ -162,9 +168,14 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
-      /*
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
+      includeAssets: [
+        'favicon.svg',
+        'robots.txt',
+        'safari-pinned-tab.svg'
+        // 'fonts/*.ttf',
+        // 'images/*.png'
+      ],
       manifest: {
         name: '@hitokoto/frontend-template',
         short_name: 'hitkoto',
@@ -173,22 +184,21 @@ export default defineConfig({
           {
             src: '/pwa-192x192.png',
             sizes: '192x192',
-            type: 'image/png',
+            type: 'image/png'
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png'
           },
           {
             src: '/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
-          },
-          {
-            src: '/pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable',
-          },
-        ],
-      },
-      */
+            purpose: 'any maskable'
+          }
+        ]
+      }
     }),
 
     // https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
@@ -222,6 +232,7 @@ export default defineConfig({
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
     script: 'async',
+    format: 'cjs',
     formatting: 'minify'
   },
 
