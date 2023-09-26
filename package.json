@@ -36,7 +36,7 @@
     "@vueuse/core": "8.9.4",
     "@vueuse/head": "0.7.12",
     "autoprefixer": "10.4.4",
-    "axios": "0.26.1",
+    "axios": "1.5.1",
     "critters": "0.0.16",
     "cross-env": "7.0.3",
     "cypress": "9.7.0",
