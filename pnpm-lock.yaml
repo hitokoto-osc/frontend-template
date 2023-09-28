@@ -43,7 +43,7 @@ specifiers:
   postcss: 8.4.12
   prettier: 2.6.0
   prism-theme-vars: 0.2.2
-  rollup: 2.70.1
+  rollup: 3.29.4
   rollup-plugin-obfuscator: 0.2.1
   rxjs: 7.5.5
   sass: 1.49.9
@@ -119,8 +119,8 @@ devDependencies:
   postcss: 8.4.12
   prettier: 2.6.0
   prism-theme-vars: 0.2.2
-  rollup: 2.70.1
-  rollup-plugin-obfuscator: 0.2.1_56a8219c6048e89d420ca8c5ec0e18e9
+  rollup: 3.29.4
+  rollup-plugin-obfuscator: 0.2.1_fe54d13305e1d87fe8099534017f1949
   rxjs: 7.5.5
   sass: 1.49.9
   stylelint: 14.6.0
@@ -134,7 +134,7 @@ devDependencies:
   vite: 2.9.15_sass@1.49.9
   vite-plugin-checker: 0.5.1_70ee8bf8f99a23675035c43b33fa1585
   vite-plugin-inspect: 0.7.4_vite@2.9.15
-  vite-plugin-md: 0.20.4_rollup@2.70.1+sass@1.49.9
+  vite-plugin-md: 0.20.4_rollup@3.29.4+sass@1.49.9
   vite-plugin-pages: 0.26.0_84e85b86a3f98e394175dd5414bab524
   vite-plugin-pwa: 0.13.1_vite@2.9.15
   vite-plugin-vue-layouts: 0.7.0_60ec480420ec6363c79b402e8d252743
@@ -2310,7 +2310,7 @@ packages:
     dependencies:
       '@yankeeinlondon/happy-wrapper': 2.6.0_sass@1.49.9
       markdown-it: 13.0.1
-      vite-plugin-md: 0.20.4_rollup@2.70.1+sass@1.49.9
+      vite-plugin-md: 0.20.4_rollup@3.29.4+sass@1.49.9
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -7731,7 +7731,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-obfuscator/0.2.1_56a8219c6048e89d420ca8c5ec0e18e9:
+  /rollup-plugin-obfuscator/0.2.1_fe54d13305e1d87fe8099534017f1949:
     resolution: {integrity: sha512-xXhGZiZsY2J38jeum9PPlk7jZPAD1vQh+PSJw2ixWqUNmPAqvLQrLjirc67ENffr/M8v3DH9X66EdJEhl2R99Q==}
     peerDependencies:
       javascript-obfuscator: ^0.18.1
@@ -7739,7 +7739,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 4.2.0
       javascript-obfuscator: 4.0.0
-      rollup: 2.70.1
+      rollup: 3.29.4
     dev: true
 
   /rollup-plugin-terser/7.0.2_rollup@2.79.1:
@@ -7754,14 +7754,6 @@ packages:
       terser: 5.12.0
     dev: true
 
-  /rollup/2.70.1:
-    resolution: {integrity: sha512-CRYsI5EuzLbXdxC6RnYhOuRdtz4bhejPMSWjsFLfVM/7w/85n2szZv6yExqUXsBdz5KT8eoubeyDUDjhLHEslA==}
-    engines: {node: '>=10.0.0'}
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
   /rollup/2.77.2:
     resolution: {integrity: sha512-m/4YzYgLcpMQbxX3NmAqDvwLATZzxt8bIegO78FZLl+lAgKJBd1DRAOeEiZcKOIOPjxE6ewHWHNgGEalFXuz1g==}
     engines: {node: '>=10.0.0'}
@@ -7773,6 +7765,14 @@ packages:
   /rollup/2.79.1:
     resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
     engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /rollup/3.29.4:
+    resolution: {integrity: sha512-oWzmBZwvYrU0iJHtDmhsm662rC15FRXmcjCk1xD771dFDx5jJ02ufAQQTn0etB2emNk4J9EZg/yWKpsn9BWGRw==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
@@ -9171,7 +9171,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-md/0.20.4_rollup@2.70.1+sass@1.49.9:
+  /vite-plugin-md/0.20.4_rollup@3.29.4+sass@1.49.9:
     resolution: {integrity: sha512-W3Z59/ROS2X6OIwPwV2PjE+QkfW0UVGxyf3Z2JR0OLqGJ+Iy2SGA503m/vmATJv+C3DjeU8Oy8diQx1R+IyRwQ==}
     peerDependencies:
       '@rollup/pluginutils': ^4.2.1
@@ -9181,7 +9181,7 @@ packages:
       '@yankeeinlondon/happy-wrapper': 2.6.0_sass@1.49.9
       gray-matter: 4.0.3
       markdown-it: 13.0.1
-      rollup: 2.70.1
+      rollup: 3.29.4
       source-map-js: 1.0.2
     transitivePeerDependencies:
       - '@edge-runtime/vm'
