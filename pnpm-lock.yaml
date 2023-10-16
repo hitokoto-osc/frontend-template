@@ -43,7 +43,7 @@ specifiers:
   postcss: 8.4.12
   prettier: 2.6.0
   prism-theme-vars: 0.2.2
-  rollup: 2.70.1
+  rollup: 4.1.4
   rollup-plugin-obfuscator: 0.2.1
   rxjs: 7.5.5
   sass: 1.49.9
@@ -119,8 +119,8 @@ devDependencies:
   postcss: 8.4.12
   prettier: 2.6.0
   prism-theme-vars: 0.2.2
-  rollup: 2.70.1
-  rollup-plugin-obfuscator: 0.2.1_56a8219c6048e89d420ca8c5ec0e18e9
+  rollup: 4.1.4
+  rollup-plugin-obfuscator: 0.2.1_5444d3cf5d2222425fa495a54ecc22fd
   rxjs: 7.5.5
   sass: 1.49.9
   stylelint: 14.6.0
@@ -134,7 +134,7 @@ devDependencies:
   vite: 2.9.15_sass@1.49.9
   vite-plugin-checker: 0.5.1_70ee8bf8f99a23675035c43b33fa1585
   vite-plugin-inspect: 0.7.4_vite@2.9.15
-  vite-plugin-md: 0.20.4_rollup@2.70.1+sass@1.49.9
+  vite-plugin-md: 0.20.4_rollup@4.1.4+sass@1.49.9
   vite-plugin-pages: 0.26.0_84e85b86a3f98e394175dd5414bab524
   vite-plugin-pwa: 0.13.1_vite@2.9.15
   vite-plugin-vue-layouts: 0.7.0_60ec480420ec6363c79b402e8d252743
@@ -1774,6 +1774,102 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /@rollup/rollup-android-arm-eabi/4.1.4:
+    resolution: {integrity: sha512-WlzkuFvpKl6CLFdc3V6ESPt7gq5Vrimd2Yv9IzKXdOpgbH4cdDSS1JLiACX8toygihtH5OlxyQzhXOph7Ovlpw==}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-android-arm64/4.1.4:
+    resolution: {integrity: sha512-D1e+ABe56T9Pq2fD+R3ybe1ylCDzu3tY4Qm2Mj24R9wXNCq35+JbFbOpc2yrroO2/tGhTobmEl2Bm5xfE/n8RA==}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-darwin-arm64/4.1.4:
+    resolution: {integrity: sha512-7vTYrgEiOrjxnjsgdPB+4i7EMxbVp7XXtS+50GJYj695xYTTEMn3HZVEvgtwjOUkAP/Q4HDejm4fIAjLeAfhtg==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-darwin-x64/4.1.4:
+    resolution: {integrity: sha512-eGJVZScKSLZkYjhTAESCtbyTBq9SXeW9+TX36ki5gVhDqJtnQ5k0f9F44jNK5RhAMgIj0Ht9+n6HAgH0gUUyWQ==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-linux-arm-gnueabihf/4.1.4:
+    resolution: {integrity: sha512-HnigYSEg2hOdX1meROecbk++z1nVJDpEofw9V2oWKqOWzTJlJf1UXVbDE6Hg30CapJxZu5ga4fdAQc/gODDkKg==}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-linux-arm64-gnu/4.1.4:
+    resolution: {integrity: sha512-TzJ+N2EoTLWkaClV2CUhBlj6ljXofaYzF/R9HXqQ3JCMnCHQZmQnbnZllw7yTDp0OG5whP4gIPozR4QiX+00MQ==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-linux-arm64-musl/4.1.4:
+    resolution: {integrity: sha512-aVPmNMdp6Dlo2tWkAduAD/5TL/NT5uor290YvjvFvCv0Q3L7tVdlD8MOGDL+oRSw5XKXKAsDzHhUOPUNPRHVTQ==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-linux-x64-gnu/4.1.4:
+    resolution: {integrity: sha512-77Fb79ayiDad0grvVsz4/OB55wJRyw9Ao+GdOBA9XywtHpuq5iRbVyHToGxWquYWlEf6WHFQQnFEttsAzboyKg==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-linux-x64-musl/4.1.4:
+    resolution: {integrity: sha512-/t6C6niEQTqmQTVTD9TDwUzxG91Mlk69/v0qodIPUnjjB3wR4UA3klg+orR2SU3Ux2Cgf2pWPL9utK80/1ek8g==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-win32-arm64-msvc/4.1.4:
+    resolution: {integrity: sha512-ZY5BHHrOPkMbCuGWFNpJH0t18D2LU6GMYKGaqaWTQ3CQOL57Fem4zE941/Ek5pIsVt70HyDXssVEFQXlITI5Gg==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-win32-ia32-msvc/4.1.4:
+    resolution: {integrity: sha512-XG2mcRfFrJvYyYaQmvCIvgfkaGinfXrpkBuIbJrTl9SaIQ8HumheWTIwkNz2mktCKwZfXHQNpO7RgXLIGQ7HXA==}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-win32-x64-msvc/4.1.4:
+    resolution: {integrity: sha512-ANFqWYPwkhIqPmXw8vm0GpBEHiPpqcm99jiiAp71DbCSqLDhrtr019C5vhD0Bw4My+LmMvciZq6IsWHqQpl2ZQ==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@rushstack/eslint-patch/1.1.1:
     resolution: {integrity: sha512-BUyKJGdDWqvWC5GEhyOiUrGNi9iJUr4CU0O2WxJL6QJhHeeA/NVBalH+FeK0r/x/W0rPymXt5s78TDS7d6lCwg==}
     dev: true
@@ -2310,7 +2406,7 @@ packages:
     dependencies:
       '@yankeeinlondon/happy-wrapper': 2.6.0_sass@1.49.9
       markdown-it: 13.0.1
-      vite-plugin-md: 0.20.4_rollup@2.70.1+sass@1.49.9
+      vite-plugin-md: 0.20.4_rollup@4.1.4+sass@1.49.9
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -7731,7 +7827,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-obfuscator/0.2.1_56a8219c6048e89d420ca8c5ec0e18e9:
+  /rollup-plugin-obfuscator/0.2.1_5444d3cf5d2222425fa495a54ecc22fd:
     resolution: {integrity: sha512-xXhGZiZsY2J38jeum9PPlk7jZPAD1vQh+PSJw2ixWqUNmPAqvLQrLjirc67ENffr/M8v3DH9X66EdJEhl2R99Q==}
     peerDependencies:
       javascript-obfuscator: ^0.18.1
@@ -7739,7 +7835,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 4.2.0
       javascript-obfuscator: 4.0.0
-      rollup: 2.70.1
+      rollup: 4.1.4
     dev: true
 
   /rollup-plugin-terser/7.0.2_rollup@2.79.1:
@@ -7752,14 +7848,6 @@ packages:
       rollup: 2.79.1
       serialize-javascript: 4.0.0
       terser: 5.12.0
-    dev: true
-
-  /rollup/2.70.1:
-    resolution: {integrity: sha512-CRYsI5EuzLbXdxC6RnYhOuRdtz4bhejPMSWjsFLfVM/7w/85n2szZv6yExqUXsBdz5KT8eoubeyDUDjhLHEslA==}
-    engines: {node: '>=10.0.0'}
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.3.2
     dev: true
 
   /rollup/2.77.2:
@@ -7775,6 +7863,26 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /rollup/4.1.4:
+    resolution: {integrity: sha512-U8Yk1lQRKqCkDBip/pMYT+IKaN7b7UesK3fLSTuHBoBJacCE+oBqo/dfG/gkUdQNNB2OBmRP98cn2C2bkYZkyw==}
+    engines: {node: '>=18.0.0', npm: '>=8.0.0'}
+    hasBin: true
+    optionalDependencies:
+      '@rollup/rollup-android-arm-eabi': 4.1.4
+      '@rollup/rollup-android-arm64': 4.1.4
+      '@rollup/rollup-darwin-arm64': 4.1.4
+      '@rollup/rollup-darwin-x64': 4.1.4
+      '@rollup/rollup-linux-arm-gnueabihf': 4.1.4
+      '@rollup/rollup-linux-arm64-gnu': 4.1.4
+      '@rollup/rollup-linux-arm64-musl': 4.1.4
+      '@rollup/rollup-linux-x64-gnu': 4.1.4
+      '@rollup/rollup-linux-x64-musl': 4.1.4
+      '@rollup/rollup-win32-arm64-msvc': 4.1.4
+      '@rollup/rollup-win32-ia32-msvc': 4.1.4
+      '@rollup/rollup-win32-x64-msvc': 4.1.4
       fsevents: 2.3.2
     dev: true
 
@@ -9171,7 +9279,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-md/0.20.4_rollup@2.70.1+sass@1.49.9:
+  /vite-plugin-md/0.20.4_rollup@4.1.4+sass@1.49.9:
     resolution: {integrity: sha512-W3Z59/ROS2X6OIwPwV2PjE+QkfW0UVGxyf3Z2JR0OLqGJ+Iy2SGA503m/vmATJv+C3DjeU8Oy8diQx1R+IyRwQ==}
     peerDependencies:
       '@rollup/pluginutils': ^4.2.1
@@ -9181,7 +9289,7 @@ packages:
       '@yankeeinlondon/happy-wrapper': 2.6.0_sass@1.49.9
       gray-matter: 4.0.3
       markdown-it: 13.0.1
-      rollup: 2.70.1
+      rollup: 4.1.4
       source-map-js: 1.0.2
     transitivePeerDependencies:
       - '@edge-runtime/vm'
