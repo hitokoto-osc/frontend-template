@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   pull_request:
-    branches: [ next ]
+    branches: [ main ]
   push:
-    branches: [ next ]
+    branches: [ main ]
 jobs:
   test:
     name: Lint
