@@ -13,12 +13,14 @@ import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { VitePWA } from 'vite-plugin-pwa'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+// import { VitePWA } from 'vite-plugin-pwa'
 // import SassDts from 'vite-plugin-sass-dts'
 // import SvgLoader from 'vite-svg-loader'
 // import Compression from 'vite-plugin-compression'
 import Checker from 'vite-plugin-checker'
-import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
@@ -121,16 +123,17 @@ export default defineConfig({
       ],
       dts: 'src/auto-imports.d.ts'
     }),
-
     // https://github.com/antfu/unplugin-vue-components
     Components({
       // allow auto load markdown components under `./src/components/`
       extensions: ['vue', 'md'],
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-      dts: 'src/components.d.ts'
+      dts: 'src/components.d.ts',
+      resolvers: [IconsResolver()]
     }),
-
+    // Ref: https://github.com/unplugin/unplugin-icons
+    Icons(),
     // https://github.com/antfu/vite-plugin-md
     // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
     Markdown({
@@ -167,39 +170,39 @@ export default defineConfig({
     }),
 
     // https://github.com/antfu/vite-plugin-pwa
-    VitePWA({
-      registerType: 'autoUpdate',
-      includeAssets: [
-        'favicon.svg',
-        'robots.txt',
-        'safari-pinned-tab.svg'
-        // 'fonts/*.ttf',
-        // 'images/*.png'
-      ],
-      manifest: {
-        name: '@hitokoto/frontend-template',
-        short_name: 'hitkoto',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: '/pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: '/pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          },
-          {
-            src: '/pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable'
-          }
-        ]
-      }
-    }),
+    // VitePWA({
+    //   registerType: 'autoUpdate',
+    //   includeAssets: [
+    //     'favicon.svg',
+    //     'robots.txt',
+    //     'safari-pinned-tab.svg'
+    //     // 'fonts/*.ttf',
+    //     // 'images/*.png'
+    //   ],
+    //   manifest: {
+    //     name: '@hitokoto/frontend-template',
+    //     short_name: 'hitkoto',
+    //     theme_color: '#ffffff',
+    //     icons: [
+    //       {
+    //         src: '/pwa-192x192.png',
+    //         sizes: '192x192',
+    //         type: 'image/png'
+    //       },
+    //       {
+    //         src: '/pwa-512x512.png',
+    //         sizes: '512x512',
+    //         type: 'image/png'
+    //       },
+    //       {
+    //         src: '/pwa-512x512.png',
+    //         sizes: '512x512',
+    //         type: 'image/png',
+    //         purpose: 'any maskable'
+    //       }
+    //     ]
+    //   }
+    // }),
 
     // https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
     VueI18n({
