@@ -1,5 +1,8 @@
-import { defineConfig } from 'vite'
+/// <reference types="vite-ssg" />
+/// <reference types="vitest" />
+
 import { resolve } from 'path'
+import { defineConfig } from 'vite'
 
 // Obfuscator
 // 与 Vite-ssg 冲突，需要修复
@@ -8,23 +11,30 @@ import { resolve } from 'path'
 
 // Vite plugins
 import Vue from '@vitejs/plugin-vue'
-import Markdown from 'vite-plugin-md'
-import Pages from 'vite-plugin-pages'
-import Layouts from 'vite-plugin-vue-layouts'
-import Components from 'unplugin-vue-components/vite'
+import Markdown from 'unplugin-vue-markdown/vite'
+// import Pages from 'vite-plugin-pages'
+import { unheadVueComposablesImports } from '@unhead/vue'
 import AutoImport from 'unplugin-auto-import/vite'
-import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
+import Icons from 'unplugin-icons/vite'
+import Components from 'unplugin-vue-components/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
+import VueRouter from 'unplugin-vue-router/vite'
+import Layouts from 'vite-plugin-vue-layouts'
 // import { VitePWA } from 'vite-plugin-pwa'
 // import SassDts from 'vite-plugin-sass-dts'
 // import SvgLoader from 'vite-svg-loader'
 // import Compression from 'vite-plugin-compression'
-import Checker from 'vite-plugin-checker'
+// import Checker from 'vite-plugin-checker'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
-import Inspect from 'vite-plugin-inspect'
-import Prism from 'markdown-it-prism'
+import { ValidateEnv } from '@julr/vite-plugin-validate-env'
 import LinkAttributes from 'markdown-it-link-attributes'
+import Prism from 'markdown-it-prism'
 import UnoCSS from 'unocss/vite'
+import VueMacros from 'unplugin-vue-macros/vite'
+import Inspect from 'vite-plugin-inspect'
+import VueDevTools from 'vite-plugin-vue-devtools'
+import { z } from 'zod'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -98,14 +108,31 @@ export default defineConfig({
     */
   },
   plugins: [
-    Vue({
-      include: [/\.vue$/, /\.md$/]
+    // Ref: https://github.com/Julien-R44/vite-plugin-validate-env
+    // configure your environment variables inside .env, and validate them here
+    ValidateEnv({
+      validator: 'zod',
+      schema: {
+        VITE_HUSKY: z.string().optional()
+      }
     }),
-
-    // https://github.com/hannoeru/vite-plugin-pages
-    Pages({
-      dirs: [{ dir: resolve(__dirname, 'src/views/pages'), baseRoute: '' }],
-      extensions: ['vue', 'md']
+    VueDevTools(),
+    VueRouter({
+      routesFolder: 'src/views/pages',
+      extensions: ['.vue', '.md'],
+      dts: './types/typed-router.d.ts'
+    }),
+    // // https://github.com/hannoeru/vite-plugin-pages
+    // Pages({
+    //   dirs: [{ dir: resolve(__dirname, 'src/views/pages'), baseRoute: '' }],
+    //   extensions: ['vue', 'md']
+    // }),
+    VueMacros({
+      plugins: {
+        vue: Vue({
+          include: [/\.vue$/, /\.md$/]
+        })
+      }
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -117,12 +144,14 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        'vue-router',
+        // 'vue-router',
+        VueRouterAutoImports,
+        unheadVueComposablesImports,
         'vue-i18n',
-        '@vueuse/head',
+        // '@vueuse/head',
         '@vueuse/core'
       ],
-      dts: 'src/auto-imports.d.ts'
+      dts: './types/auto-imports.d.ts'
     }),
     // https://github.com/antfu/unplugin-vue-components
     Components({
@@ -130,13 +159,12 @@ export default defineConfig({
       extensions: ['vue', 'md'],
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-      dts: 'src/components.d.ts',
+      dts: './types/components.d.ts',
       resolvers: [IconsResolver()]
     }),
     // Ref: https://github.com/unplugin/unplugin-icons
     Icons(),
-    // https://github.com/antfu/vite-plugin-md
-    // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
+    // Ref: https://github.com/unplugin/unplugin-vue-markdown
     Markdown({
       wrapperClasses: markdownWrapperClasses,
       headEnabled: true,
@@ -160,15 +188,15 @@ export default defineConfig({
     // https://github.com/fi3ework/vite-plugin-checker
     // Blocked by https://github.com/fi3ework/vite-plugin-checker/issues/115
 
-    Checker({
-      vueTsc: true,
-      eslint: {
-        lintCommand: 'eslint "./src/**/*.{ts,tsx}"',
-        dev: {
-          logLevel: ['error']
-        }
-      }
-    }),
+    // Checker({
+    //   vueTsc: true,
+    //   eslint: {
+    //     lintCommand: 'eslint "./src/**/*.{ts,tsx}"',
+    //     dev: {
+    //       logLevel: ['error']
+    //     }
+    //   }
+    // }),
 
     // https://github.com/antfu/vite-plugin-pwa
     // VitePWA({
@@ -218,17 +246,6 @@ export default defineConfig({
       enabled: false
     }),
 
-    // https://github.com/activeguild/vite-plugin-sass-dts
-    // 应该等他更稳定再启用
-    /*
-    SassDts({
-      allGenerate: true,
-      global: {
-        generate: true,
-        outFile: resolve(__dirname, './src/style.d.ts')
-      }
-    })
-    */
     // https://github.com/vbenjs/vite-plugin-compression
     // Compression()
 
@@ -240,11 +257,22 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     format: 'cjs',
-    formatting: 'minify'
+    formatting: 'minify',
+    crittersOptions: {
+      reduceInlineStyles: false
+    }
+    // onFinished() {
+    //   generateSitemap()
+    // }
   },
 
   optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
+    include: [
+      'vue',
+      // 'vue-router',
+      '@vueuse/core'
+      // '@vueuse/head'
+    ],
     exclude: ['vue-demi']
   },
 
@@ -258,9 +286,13 @@ export default defineConfig({
   },
 
   resolve: {
-    alias: [
-      { find: /^@(?=\/)/, replacement: resolve(__dirname, './src') },
-      { find: /^~(?=\/)/, replacement: resolve(__dirname, './') }
-    ]
+    alias: {
+      '@/': `${resolve(__dirname, 'src')}/`,
+      '~/': `${resolve(__dirname)}/`
+    }
+  },
+  ssr: {
+    // TODO: workaround until they support native ESM
+    noExternal: ['workbox-window', /vue-i18n/]
   }
 })

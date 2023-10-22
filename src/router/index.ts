@@ -1,10 +1,11 @@
 import { RouterOptions } from 'vite-ssg'
-import { RouteRecordRaw } from 'vue-router'
-import generatedRoutes from 'virtual:generated-pages'
+import type { RouteRecordRaw } from 'vue-router/auto'
+// import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
+import { routes } from 'vue-router/auto/routes'
 
 export function useRoutes(): RouteRecordRaw[] {
-  return [...setupLayouts([...generatedRoutes])]
+  return [...setupLayouts(routes)]
 }
 
 export default (): RouterOptions => {

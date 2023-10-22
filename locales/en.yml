@@ -6,7 +6,7 @@ button:
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
-  desc: Opinionated Vite Starter Template
+  desc: This is a demo of frontend-template
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
   aka: Also known as

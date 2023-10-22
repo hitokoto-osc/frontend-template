@@ -16,23 +16,11 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
+    'no-undef': 'off',
     'vue/html-closing-bracket-newline': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'vue/multi-word-component-names': [
-      'warn',
-      {
-        ignores: [
-          'default',
-          '404',
-          'home',
-          'index',
-          'layout',
-          'login',
-          'register'
-        ]
-      }
-    ]
+    'vue/multi-word-component-names': 'off'
   },
   settings: {
     'import/resolver': {

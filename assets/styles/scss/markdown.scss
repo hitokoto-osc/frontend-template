@@ -1,4 +1,5 @@
 /* https://github.com/antfu/prism-theme-vars */
+/* stylelint-disable-next-line import-notation */
 @import 'prism-theme-vars/base.css';
 
 .prose {
@@ -51,8 +52,8 @@ html.dark .prose {
   --prism-decorator: #bd8f8f;
   --prism-regex: #ab5e3f;
   --prism-json-property: #6b8b9e;
-  --prism-line-number: #888888;
-  --prism-line-number-gutter: #eeeeee;
-  --prism-line-highlight-background: #444444;
-  --prism-selection-background: #444444;
+  --prism-line-number: #888;
+  --prism-line-number-gutter: #eee;
+  --prism-line-highlight-background: #444;
+  --prism-selection-background: #444;
 }

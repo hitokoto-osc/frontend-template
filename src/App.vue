@@ -10,4 +10,5 @@ useHead({
 
 <template>
   <router-view />
+  <unocss-indicator />
 </template>
