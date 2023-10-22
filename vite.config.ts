@@ -24,6 +24,7 @@ import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
+import UnoCSS from 'unocss/vite'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -215,7 +216,7 @@ export default defineConfig({
     Inspect({
       // change this to enable inspect for debugging
       enabled: false
-    })
+    }),
 
     // https://github.com/activeguild/vite-plugin-sass-dts
     // 应该等他更稳定再启用
@@ -230,6 +231,9 @@ export default defineConfig({
     */
     // https://github.com/vbenjs/vite-plugin-compression
     // Compression()
+
+    // Ref: https://unocss.dev/
+    UnoCSS()
   ],
 
   // https://github.com/antfu/vite-ssg
