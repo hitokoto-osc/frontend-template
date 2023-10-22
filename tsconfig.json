@@ -20,6 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "types": [
+      "unplugin-vue-macros/macros-global",
       "vite-plugin-vue-layouts/client.d.ts",
       "vite/client",
       "vitest"
