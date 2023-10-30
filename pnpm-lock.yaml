@@ -104,8 +104,8 @@ devDependencies:
     specifier: 7.0.3
     version: 7.0.3
   cypress:
-    specifier: 13.3.3
-    version: 13.3.3
+    specifier: 13.4.0
+    version: 13.4.0
   dayjs:
     specifier: 1.11.10
     version: 1.11.10
@@ -5133,8 +5133,8 @@ packages:
       array-find-index: 1.0.2
     dev: true
 
-  /cypress@13.3.3:
-    resolution: {integrity: sha512-mbdkojHhKB1xbrj7CrKWHi22uFx9P9vQFiR0sYDZZoK99OMp9/ZYN55TO5pjbXmV7xvCJ4JwBoADXjOJK8aCJw==}
+  /cypress@13.4.0:
+    resolution: {integrity: sha512-KeWNC9xSHG/ewZURVbaQsBQg2mOKw4XhjJZFKjWbEjgZCdxpPXLpJnfq5Jns1Gvnjp6AlnIfpZfWFlDgVKXdWQ==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
     requiresBuild: true
