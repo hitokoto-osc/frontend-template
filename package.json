@@ -52,7 +52,7 @@
     "@vue/server-renderer": "3.3.8",
     "@vueuse/core": "10.5.0",
     "autoprefixer": "10.4.16",
-    "axios": "1.6.0",
+    "axios": "1.6.1",
     "critters": "0.0.20",
     "cross-env": "7.0.3",
     "cypress": "13.4.0",
