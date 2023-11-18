@@ -102,7 +102,7 @@
     "vite-plugin-checker": "0.6.2",
     "vite-plugin-inspect": "0.7.42",
     "vite-plugin-md": "0.21.5",
-    "vite-plugin-pwa": "0.16.7",
+    "vite-plugin-pwa": "0.17.0",
     "vite-plugin-vue-devtools": "1.0.0-rc.5",
     "vite-plugin-vue-layouts": "0.8.0",
     "vite-ssg": "0.23.5",
