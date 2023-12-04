@@ -179,8 +179,8 @@ devDependencies:
     specifier: 4.6.1
     version: 4.6.1
   rollup-plugin-obfuscator:
-    specifier: 1.0.3
-    version: 1.0.3(javascript-obfuscator@4.1.0)(rollup@4.6.1)
+    specifier: 1.1.0
+    version: 1.1.0(javascript-obfuscator@4.1.0)(rollup@4.6.1)
   sass:
     specifier: 1.69.5
     version: 1.69.5
@@ -4686,7 +4686,7 @@ packages:
     engines: {node: '>=16.14.0'}
     dependencies:
       '@babel/parser': 7.23.4
-      '@rollup/pluginutils': 5.0.5(rollup@4.6.1)
+      '@rollup/pluginutils': 5.1.0(rollup@4.6.1)
       pathe: 1.1.1
     transitivePeerDependencies:
       - rollup
@@ -10252,13 +10252,13 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup-plugin-obfuscator@1.0.3(javascript-obfuscator@4.1.0)(rollup@4.6.1):
-    resolution: {integrity: sha512-Eru0ljDyJUffYAYddHekvaWaEmJc8z1j8FF4KQWLdwGtl0iA9QoEFatzXD67ql8MV1KpZfzi0qqMkHhTu02uVA==}
+  /rollup-plugin-obfuscator@1.1.0(javascript-obfuscator@4.1.0)(rollup@4.6.1):
+    resolution: {integrity: sha512-cMfQIKyGePlfHGGO+rSDhSATMBx7WWxXW/X66c53HylUE/owanTbG6nhttUQOkbdCiQH8tClskNEH/IPRoqZwA==}
     peerDependencies:
       javascript-obfuscator: '*'
-      rollup: ^2.56.3||^3.0.0
+      rollup: ^2.56.3||^3.0.0||^4.0.0
     dependencies:
-      '@rollup/pluginutils': 5.0.5(rollup@4.6.1)
+      '@rollup/pluginutils': 5.1.0(rollup@4.6.1)
       javascript-obfuscator: 4.1.0
       rollup: 4.6.1
     dev: true
@@ -12174,7 +12174,7 @@ packages:
         optional: true
     dependencies:
       '@antfu/utils': 0.7.6
-      '@rollup/pluginutils': 5.0.5(rollup@4.6.1)
+      '@rollup/pluginutils': 5.1.0(rollup@4.6.1)
       debug: 4.3.4(supports-color@8.1.1)
       error-stack-parser-es: 0.1.1
       fs-extra: 11.1.1
