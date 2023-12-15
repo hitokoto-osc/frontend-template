@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^0.2.4
     version: 0.2.4(vite@5.0.9)(zod@3.22.4)
   '@rushstack/eslint-patch':
-    specifier: 1.6.0
-    version: 1.6.0
+    specifier: 1.6.1
+    version: 1.6.1
   '@types/markdown-it-link-attributes':
     specifier: 3.0.4
     version: 3.0.4
@@ -2759,8 +2759,8 @@ packages:
     dev: true
     optional: true
 
-  /@rushstack/eslint-patch@1.6.0:
-    resolution: {integrity: sha512-2/U3GXA6YiPYQDLGwtGlnNgKYBSwCFIHf8Y9LUY5VATHdtbLlU0Y1R3QoBnT0aB4qv/BEiVVsj7LJXoQCgJ2vA==}
+  /@rushstack/eslint-patch@1.6.1:
+    resolution: {integrity: sha512-UY+FGM/2jjMkzQLn8pxcHGMaVLh9aEitG3zY2CiY7XHdLiz3bZOwa6oDxNqEMv7zZkV+cj5DOdz0cQ1BP5Hjgw==}
     dev: true
 
   /@sinclair/typebox@0.27.8:
