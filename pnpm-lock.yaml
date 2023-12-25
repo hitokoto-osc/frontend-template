@@ -71,8 +71,8 @@ devDependencies:
     specifier: ^0.58.0
     version: 0.58.0
   '@vitejs/plugin-vue':
-    specifier: 4.5.2
-    version: 4.5.2(vite@5.0.10)(vue@3.3.13)
+    specifier: 4.6.0
+    version: 4.6.0(vite@5.0.10)(vue@3.3.13)
   '@vue-macros/volar':
     specifier: ^0.18.0
     version: 0.18.0(@vue-macros/reactivity-transform@0.4.1)(rollup@4.9.1)(typescript@5.3.3)(vue-tsc@1.8.26)(vue@3.3.13)
@@ -243,7 +243,7 @@ devDependencies:
     version: 0.8.1(rollup@4.9.1)(vite@5.0.10)
   vite-plugin-md:
     specifier: 0.21.5
-    version: 0.21.5(@vitejs/plugin-vue@4.5.2)(sass@1.69.5)(vite@5.0.10)
+    version: 0.21.5(@vitejs/plugin-vue@4.6.0)(sass@1.69.5)(vite@5.0.10)
   vite-plugin-pwa:
     specifier: 0.17.4
     version: 0.17.4(vite@5.0.10)(workbox-build@7.0.0)(workbox-window@7.0.0)
@@ -3366,8 +3366,8 @@ packages:
       vite-hot-client: 0.2.2(vite@5.0.10)
     dev: true
 
-  /@vitejs/plugin-vue@4.5.2(vite@5.0.10)(vue@3.3.13):
-    resolution: {integrity: sha512-UGR3DlzLi/SaVBPX0cnSyE37vqxU3O6chn8l0HJNzQzDia6/Au2A4xKv+iIJW8w2daf80G7TYHhi1pAUjdZ0bQ==}
+  /@vitejs/plugin-vue@4.6.0(vite@5.0.10)(vue@3.3.13):
+    resolution: {integrity: sha512-XHuyFdAikWRmHuAd89FOyUGIjrBU5KlxJtyi2hVeR9ySGFxQwE0bl5xAQju/ArMq5azdBivY4d+D2yPKwoYWUg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0 || ^5.0.0
@@ -4136,7 +4136,7 @@ packages:
       - supports-color
     dev: true
 
-  /@yankeeinlondon/builder-api@1.4.1(@vitejs/plugin-vue@4.5.2)(sass@1.69.5)(vite@5.0.10):
+  /@yankeeinlondon/builder-api@1.4.1(@vitejs/plugin-vue@4.6.0)(sass@1.69.5)(vite@5.0.10):
     resolution: {integrity: sha512-qc6HyfqtuS06FvA5rK0L62Nmc1LnarVOt8/V/mTX2DBZlpTfIDpudpbE/7/kxjme9pP4PFMCk7cPSrprLEorjw==}
     dependencies:
       '@types/markdown-it': 12.2.3
@@ -4144,7 +4144,7 @@ packages:
       fp-ts: 2.16.1
       inferred-types: 0.37.6(sass@1.69.5)
       markdown-it: 13.0.2
-      vite-plugin-md: 0.22.5(@vitejs/plugin-vue@4.5.2)(sass@1.69.5)(vite@5.0.10)
+      vite-plugin-md: 0.22.5(@vitejs/plugin-vue@4.6.0)(sass@1.69.5)(vite@5.0.10)
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitejs/plugin-vue'
@@ -12097,12 +12097,12 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-md@0.21.5(@vitejs/plugin-vue@4.5.2)(sass@1.69.5)(vite@5.0.10):
+  /vite-plugin-md@0.21.5(@vitejs/plugin-vue@4.6.0)(sass@1.69.5)(vite@5.0.10):
     resolution: {integrity: sha512-gxiiSq2PmU2zUY5ZAFLEGmDFRV6J6gF85ns3hcvtgERibNST4gWxRSabqSZbGbHp3LEBwwK7C1CRLsl46yEiWg==}
     peerDependencies:
       vite: ^4.0.0
     dependencies:
-      '@yankeeinlondon/builder-api': 1.4.1(@vitejs/plugin-vue@4.5.2)(sass@1.69.5)(vite@5.0.10)
+      '@yankeeinlondon/builder-api': 1.4.1(@vitejs/plugin-vue@4.6.0)(sass@1.69.5)(vite@5.0.10)
       '@yankeeinlondon/gray-matter': 6.1.1(sass@1.69.5)
       '@yankeeinlondon/happy-wrapper': 2.10.1(sass@1.69.5)
       markdown-it: 13.0.2
@@ -12125,14 +12125,14 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-md@0.22.5(@vitejs/plugin-vue@4.5.2)(sass@1.69.5)(vite@5.0.10):
+  /vite-plugin-md@0.22.5(@vitejs/plugin-vue@4.6.0)(sass@1.69.5)(vite@5.0.10):
     resolution: {integrity: sha512-ex6yQfan2teBT2uMzoIlDHRhKTOsNiyvblA9eLU/+uygpg4KikJPFeyBX300LqQ3pZ9qGHz35qoGJ0oLw47eZg==}
     peerDependencies:
       '@vitejs/plugin-vue': '>=2.3.4'
       vite: ^4.0.0 || ^3.0.0
     dependencies:
-      '@vitejs/plugin-vue': 4.5.2(vite@5.0.10)(vue@3.3.13)
-      '@yankeeinlondon/builder-api': 1.4.1(@vitejs/plugin-vue@4.5.2)(sass@1.69.5)(vite@5.0.10)
+      '@vitejs/plugin-vue': 4.6.0(vite@5.0.10)(vue@3.3.13)
+      '@yankeeinlondon/builder-api': 1.4.1(@vitejs/plugin-vue@4.6.0)(sass@1.69.5)(vite@5.0.10)
       '@yankeeinlondon/gray-matter': 6.1.1(sass@1.69.5)
       '@yankeeinlondon/happy-wrapper': 2.10.1(sass@1.69.5)
       markdown-it: 13.0.2
