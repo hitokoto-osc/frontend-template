@@ -55,7 +55,7 @@
     "axios": "1.6.2",
     "critters": "0.0.20",
     "cross-env": "7.0.3",
-    "cypress": "13.6.1",
+    "cypress": "13.6.2",
     "dayjs": "1.11.10",
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
