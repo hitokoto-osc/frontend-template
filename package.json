@@ -44,7 +44,7 @@
     "@unocss/transformer-compile-class": "^0.58.0",
     "@unocss/transformer-directives": "^0.58.0",
     "@unocss/transformer-variant-group": "^0.58.0",
-    "@vitejs/plugin-vue": "4.6.0",
+    "@vitejs/plugin-vue": "4.6.1",
     "@vue-macros/volar": "^0.18.0",
     "@vue/compiler-sfc": "3.4.0",
     "@vue/eslint-config-prettier": "8.0.0",
