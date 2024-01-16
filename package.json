@@ -31,7 +31,7 @@
     "@iconify/json": "^2.2.131",
     "@intlify/unplugin-vue-i18n": "^1.4.0",
     "@julr/vite-plugin-validate-env": "^0.2.4",
-    "@rushstack/eslint-patch": "1.6.1",
+    "@rushstack/eslint-patch": "1.7.0",
     "@types/markdown-it-link-attributes": "3.0.4",
     "@types/nprogress": "0.2.3",
     "@typescript-eslint/eslint-plugin": "6.19.0",
