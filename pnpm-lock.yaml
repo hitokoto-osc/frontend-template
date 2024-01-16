@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^0.2.4
     version: 0.2.4(vite@5.0.11)(zod@3.22.4)
   '@rushstack/eslint-patch':
-    specifier: 1.6.1
-    version: 1.6.1
+    specifier: 1.7.0
+    version: 1.7.0
   '@types/markdown-it-link-attributes':
     specifier: 3.0.4
     version: 3.0.4
@@ -2763,8 +2763,8 @@ packages:
     dev: true
     optional: true
 
-  /@rushstack/eslint-patch@1.6.1:
-    resolution: {integrity: sha512-UY+FGM/2jjMkzQLn8pxcHGMaVLh9aEitG3zY2CiY7XHdLiz3bZOwa6oDxNqEMv7zZkV+cj5DOdz0cQ1BP5Hjgw==}
+  /@rushstack/eslint-patch@1.7.0:
+    resolution: {integrity: sha512-Jh4t/593gxs0lJZ/z3NnasKlplXT2f+4y/LZYuaKZW5KAaiVFL/fThhs+17EbUd53jUVJ0QudYCBGbN/psvaqg==}
     dev: true
 
   /@sinclair/typebox@0.27.8:
@@ -3781,8 +3781,8 @@ packages:
     dependencies:
       '@babel/parser': 7.23.6
       '@vue-macros/common': 1.10.0(rollup@4.9.5)(vue@3.4.14)
-      '@vue/compiler-core': 3.4.13
-      '@vue/shared': 3.4.13
+      '@vue/compiler-core': 3.4.14
+      '@vue/shared': 3.4.14
       magic-string: 0.30.5
       unplugin: 1.6.0
       vue: 3.4.14(typescript@5.3.3)
