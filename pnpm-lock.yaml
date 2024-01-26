@@ -215,8 +215,8 @@ devDependencies:
     specifier: ^0.58.0
     version: 0.58.0(postcss@8.4.33)(rollup@4.9.6)(vite@5.0.12)
   unplugin-auto-import:
-    specifier: 0.17.4
-    version: 0.17.4(@vueuse/core@10.7.2)(rollup@4.9.6)
+    specifier: 0.17.5
+    version: 0.17.5(@vueuse/core@10.7.2)(rollup@4.9.6)
   unplugin-icons:
     specifier: ^0.18.0
     version: 0.18.0(@vue/compiler-sfc@3.4.15)
@@ -245,8 +245,8 @@ devDependencies:
     specifier: 0.21.5
     version: 0.21.5(@vitejs/plugin-vue@4.6.2)(sass@1.70.0)(vite@5.0.12)
   vite-plugin-pwa:
-    specifier: 0.17.4
-    version: 0.17.4(vite@5.0.12)(workbox-build@7.0.0)(workbox-window@7.0.0)
+    specifier: 0.17.5
+    version: 0.17.5(vite@5.0.12)(workbox-build@7.0.0)(workbox-window@7.0.0)
   vite-plugin-vue-devtools:
     specifier: 1.0.0-rc.8
     version: 1.0.0-rc.8(pug@3.0.2)(rollup@4.9.6)(vite@5.0.12)
@@ -11687,8 +11687,8 @@ packages:
       - supports-color
     dev: true
 
-  /unplugin-auto-import@0.17.4(@vueuse/core@10.7.2)(rollup@4.9.6):
-    resolution: {integrity: sha512-sInr7+UOeFMtiRCr7lYZXouTnVqXNUJtN5yN5GDzg6Sr2rwY5ZWZmqf4yvItYCm8mq1PdzPw3oojYHgZAJnTRQ==}
+  /unplugin-auto-import@0.17.5(@vueuse/core@10.7.2)(rollup@4.9.6):
+    resolution: {integrity: sha512-fHNDkDSxv3PGagX1wmKBYBkgaM4AKAgZmdJw/bxjhNljx9KSXSgHpGfX0MwUrq9qw6q1bhHIZVWyOwoY2koo4w==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': ^3.2.2
@@ -12248,8 +12248,8 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-pwa@0.17.4(vite@5.0.12)(workbox-build@7.0.0)(workbox-window@7.0.0):
-    resolution: {integrity: sha512-j9iiyinFOYyof4Zk3Q+DtmYyDVBDAi6PuMGNGq6uGI0pw7E+LNm9e+nQ2ep9obMP/kjdWwzilqUrlfVRj9OobA==}
+  /vite-plugin-pwa@0.17.5(vite@5.0.12)(workbox-build@7.0.0)(workbox-window@7.0.0):
+    resolution: {integrity: sha512-UxRNPiJBzh4tqU/vc8G2TxmrUTzT6BqvSzhszLk62uKsf+npXdvLxGDz9C675f4BJi6MbD2tPnJhi5txlMzxbQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0 || ^5.0.0
