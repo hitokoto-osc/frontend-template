@@ -98,8 +98,8 @@ devDependencies:
     specifier: 1.6.7
     version: 1.6.7
   critters:
-    specifier: 0.0.20
-    version: 0.0.20
+    specifier: 0.0.21
+    version: 0.0.21
   cross-env:
     specifier: 7.0.3
     version: 7.0.3
@@ -255,7 +255,7 @@ devDependencies:
     version: 0.11.0(vite@5.0.12)(vue-router@4.2.5)(vue@3.4.15)
   vite-ssg:
     specifier: 0.23.6
-    version: 0.23.6(critters@0.0.20)(vite@5.0.12)(vue-router@4.2.5)(vue@3.4.15)
+    version: 0.23.6(critters@0.0.21)(vite@5.0.12)(vue-router@4.2.5)(vue@3.4.15)
   vitest:
     specifier: 0.34.6
     version: 0.34.6(sass@1.71.1)
@@ -5797,8 +5797,8 @@ packages:
       typescript: 5.3.3
     dev: true
 
-  /critters@0.0.20:
-    resolution: {integrity: sha512-CImNRorKOl5d8TWcnAz5n5izQ6HFsvz29k327/ELy6UFcmbiZNOsinaKvzv16WZR0P6etfSWYzE47C4/56B3Uw==}
+  /critters@0.0.21:
+    resolution: {integrity: sha512-ot4I12fiWEii7gxLy6lyd30ToX8soJi/BRnTFuthiAo//gCPrm90iovl7V3zXvryC4EzVlJzLswQtN6T5qTK3w==}
     dependencies:
       chalk: 4.1.2
       css-select: 5.1.0
@@ -5806,6 +5806,7 @@ packages:
       domhandler: 5.0.3
       htmlparser2: 8.0.2
       postcss: 8.4.35
+      postcss-media-query-parser: 0.2.3
       pretty-bytes: 5.6.0
     dev: true
 
@@ -13031,7 +13032,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg@0.23.6(critters@0.0.20)(vite@5.0.12)(vue-router@4.2.5)(vue@3.4.15):
+  /vite-ssg@0.23.6(critters@0.0.21)(vite@5.0.12)(vue-router@4.2.5)(vue@3.4.15):
     resolution: {integrity: sha512-wRMc492AjBYyXNaNMlxcNkOWidxdNRLFnKe2YT1fQd28AD4Ak1GvS6b7hQLMyekYHb7i9+7AvJH6ieGGKgZmTQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -13048,7 +13049,7 @@ packages:
     dependencies:
       '@unhead/dom': 1.8.9
       '@unhead/vue': 1.8.9(vue@3.4.15)
-      critters: 0.0.20
+      critters: 0.0.21
       fs-extra: 11.2.0
       html-minifier: 4.0.0
       html5parser: 2.0.2
