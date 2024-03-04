@@ -24,7 +24,7 @@ devDependencies:
     version: 18.6.2
   '@iconify/json':
     specifier: ^2.2.131
-    version: 2.2.188
+    version: 2.2.189
   '@intlify/unplugin-vue-i18n':
     specifier: ^1.4.0
     version: 1.6.0(rollup@4.12.0)(vue-i18n@9.9.1)
@@ -2599,8 +2599,8 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
 
-  /@iconify/json@2.2.188:
-    resolution: {integrity: sha512-gsJwZ60Vb5IrtjYu+Al4qMaML9ZKUnop6Gi0537ZcA6nEhe3Nb58WH4c6b1+mXOHwOkFlLA8AFBXJUHY5nKMdA==}
+  /@iconify/json@2.2.189:
+    resolution: {integrity: sha512-q0DxpGQuQhtoNXELlHKbkxTSOjuzf/3Qaqq5uuJ/dM62XH1GUUxlXsgH/Moh/CEcs3evzWFp2mjIQifZmihQTA==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.2
@@ -4820,7 +4820,7 @@ packages:
     dependencies:
       '@babel/parser': 7.24.0
       '@rollup/pluginutils': 5.1.0(rollup@4.12.0)
-      pathe: 1.1.2
+      pathe: 1.1.1
     transitivePeerDependencies:
       - rollup
     dev: true
