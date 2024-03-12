@@ -79,7 +79,7 @@
     "postcss-scss": "^4.0.9",
     "prettier": "3.2.5",
     "prism-theme-vars": "0.2.4",
-    "rollup": "4.12.1",
+    "rollup": "4.13.0",
     "rollup-plugin-obfuscator": "1.1.0",
     "sass": "1.71.1",
     "stylelint": "15.11.0",
