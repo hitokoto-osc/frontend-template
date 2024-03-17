@@ -93,7 +93,7 @@ devDependencies:
     version: 10.7.2(vue@3.4.15)
   autoprefixer:
     specifier: 10.4.18
-    version: 10.4.18(postcss@8.4.35)
+    version: 10.4.18(postcss@8.4.36)
   axios:
     specifier: 1.6.8
     version: 1.6.8
@@ -161,14 +161,14 @@ devDependencies:
     specifier: 0.2.0
     version: 0.2.0
   postcss:
-    specifier: 8.4.35
-    version: 8.4.35
+    specifier: 8.4.36
+    version: 8.4.36
   postcss-html:
     specifier: ^1.5.0
     version: 1.6.0
   postcss-scss:
     specifier: ^4.0.9
-    version: 4.0.9(postcss@8.4.35)
+    version: 4.0.9(postcss@8.4.36)
   prettier:
     specifier: 3.2.5
     version: 3.2.5
@@ -213,7 +213,7 @@ devDependencies:
     version: 5.4.2
   unocss:
     specifier: ^0.58.0
-    version: 0.58.6(postcss@8.4.35)(rollup@4.13.0)(vite@5.0.12)
+    version: 0.58.6(postcss@8.4.36)(rollup@4.13.0)(vite@5.0.12)
   unplugin-auto-import:
     specifier: 0.17.5
     version: 0.17.5(@vueuse/core@10.7.2)(rollup@4.13.0)
@@ -3213,7 +3213,7 @@ packages:
       sirv: 2.0.4
     dev: true
 
-  /@unocss/postcss@0.58.6(postcss@8.4.35):
+  /@unocss/postcss@0.58.6(postcss@8.4.36):
     resolution: {integrity: sha512-jTwu7llhRm7luscsk0JekCeo6RS2W98CXiCJRE1H6IDQnjGQQ/9uRAqW4wuLsv7OQ1ThF8m9NKEj0wFJv7ePNg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3225,7 +3225,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.2
       magic-string: 0.30.8
-      postcss: 8.4.35
+      postcss: 8.4.36
     dev: true
 
   /@unocss/preset-attributify@0.58.6:
@@ -3910,7 +3910,7 @@ packages:
       '@vue/shared': 3.4.15
       estree-walker: 2.0.2
       magic-string: 0.30.5
-      postcss: 8.4.35
+      postcss: 8.4.36
       source-map-js: 1.0.2
 
   /@vue/compiler-ssr@3.4.15:
@@ -4537,7 +4537,7 @@ packages:
     hasBin: true
     dev: true
 
-  /autoprefixer@10.4.18(postcss@8.4.35):
+  /autoprefixer@10.4.18(postcss@8.4.36):
     resolution: {integrity: sha512-1DKbDfsr6KUElM6wg+0zRNkB/Q7WcKYAaK+pzXn+Xqmszm/5Xa9coeNdtP88Vi+dPzZnMjhge8GIV49ZQkDa+g==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -4549,7 +4549,7 @@ packages:
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.35
+      postcss: 8.4.36
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -5397,7 +5397,7 @@ packages:
       dom-serializer: 2.0.0
       domhandler: 5.0.3
       htmlparser2: 8.0.2
-      postcss: 8.4.35
+      postcss: 8.4.36
       postcss-media-query-parser: 0.2.3
     dev: true
 
@@ -9567,7 +9567,7 @@ packages:
     dependencies:
       htmlparser2: 3.10.1
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.35)
+      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.36)
     dev: true
 
   /postcss-html@1.6.0:
@@ -9576,8 +9576,8 @@ packages:
     dependencies:
       htmlparser2: 8.0.2
       js-tokens: 8.0.3
-      postcss: 8.4.35
-      postcss-safe-parser: 6.0.0(postcss@8.4.35)
+      postcss: 8.4.36
+      postcss-safe-parser: 6.0.0(postcss@8.4.36)
     dev: true
 
   /postcss-jsx@0.36.4(postcss-syntax@0.36.2)(postcss@7.0.39):
@@ -9588,7 +9588,7 @@ packages:
     dependencies:
       '@babel/core': 7.24.0
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.35)
+      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.36)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -9607,7 +9607,7 @@ packages:
       postcss-syntax: '>=0.36.0'
     dependencies:
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.35)
+      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.36)
       remark: 10.0.1
       unist-util-find-all-after: 1.0.5
     dev: true
@@ -9637,13 +9637,13 @@ packages:
       postcss: 7.0.39
     dev: true
 
-  /postcss-safe-parser@6.0.0(postcss@8.4.35):
+  /postcss-safe-parser@6.0.0(postcss@8.4.36):
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.36
     dev: true
 
   /postcss-sass@0.3.5:
@@ -9660,13 +9660,13 @@ packages:
       postcss: 7.0.39
     dev: true
 
-  /postcss-scss@4.0.9(postcss@8.4.35):
+  /postcss-scss@4.0.9(postcss@8.4.36):
     resolution: {integrity: sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.4.29
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.36
     dev: true
 
   /postcss-selector-parser@3.1.2:
@@ -9702,15 +9702,15 @@ packages:
       postcss: 7.0.39
     dev: true
 
-  /postcss-sorting@8.0.2(postcss@8.4.35):
+  /postcss-sorting@8.0.2(postcss@8.4.36):
     resolution: {integrity: sha512-M9dkSrmU00t/jK7rF6BZSZauA5MAaBW4i5EnJXspMwt4iqTh/L9j6fgMnbElEOfyRyfLfVbIHj/R52zHzAPe1Q==}
     peerDependencies:
       postcss: ^8.4.20
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.36
     dev: true
 
-  /postcss-syntax@0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.35):
+  /postcss-syntax@0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.36):
     resolution: {integrity: sha512-nBRg/i7E3SOHWxF3PpF5WnJM/jQ1YpY9000OaVXlAQj6Zp/kIqJxEDWIZ67tAd7NLuk7zqN4yqe9nc0oNAOs1w==}
     peerDependencies:
       postcss: '>=5.0.0'
@@ -9731,9 +9731,9 @@ packages:
       postcss-scss:
         optional: true
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.36
       postcss-html: 1.6.0
-      postcss-scss: 4.0.9(postcss@8.4.35)
+      postcss-scss: 4.0.9(postcss@8.4.36)
     dev: true
 
   /postcss-value-parser@3.3.1:
@@ -9752,13 +9752,13 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /postcss@8.4.35:
-    resolution: {integrity: sha512-u5U8qYpBCpN13BsiEB0CbR1Hhh4Gc0zLFuedrHJKMctHCHAGrMdG0PRM/KErzAL3CU6/eckEtmHNB3x6e3c0vA==}
+  /postcss@8.4.36:
+    resolution: {integrity: sha512-/n7eumA6ZjFHAsbX30yhHup/IMkOmlmvtEi7P+6RMYf+bGJSUHc3geH4a0NSZxAz/RJfiS9tooCTs9LAVYUZKw==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.0
-      source-map-js: 1.0.2
+      source-map-js: 1.1.0
 
   /prelude-ls@1.1.2:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
@@ -10721,6 +10721,10 @@ packages:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
 
+  /source-map-js@1.1.0:
+    resolution: {integrity: sha512-9vC2SfsJzlej6MAaMPLu8HiBSHGdRAJ9hVFYN1ibZoNkeanmDmLUcIrj6G9DGL7XMJ54AKg/G75akXl1/izTOw==}
+    engines: {node: '>=0.10.0'}
+
   /source-map-resolve@0.5.3:
     resolution: {integrity: sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==}
     deprecated: See https://github.com/lydell/source-map-resolve#deprecated
@@ -11110,8 +11114,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
     dependencies:
-      postcss: 8.4.35
-      postcss-sorting: 8.0.2(postcss@8.4.35)
+      postcss: 8.4.36
+      postcss-sorting: 8.0.2(postcss@8.4.36)
       stylelint: 15.11.0(typescript@5.4.2)
     dev: true
 
@@ -11160,9 +11164,9 @@ packages:
       micromatch: 4.0.5
       normalize-path: 3.0.0
       picocolors: 1.0.0
-      postcss: 8.4.35
+      postcss: 8.4.36
       postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 6.0.0(postcss@8.4.35)
+      postcss-safe-parser: 6.0.0(postcss@8.4.36)
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
@@ -11219,7 +11223,7 @@ packages:
       postcss-sass: 0.3.5
       postcss-scss: 2.1.1
       postcss-selector-parser: 3.1.2
-      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.35)
+      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9)(postcss@8.4.36)
       postcss-value-parser: 3.3.1
       resolve-from: 4.0.0
       signal-exit: 3.0.7
@@ -11864,7 +11868,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unocss@0.58.6(postcss@8.4.35)(rollup@4.13.0)(vite@5.0.12):
+  /unocss@0.58.6(postcss@8.4.36)(rollup@4.13.0)(vite@5.0.12):
     resolution: {integrity: sha512-HBstDtC6KKD5yCYh5hHpPdHGZai0B/iLlDwkOIK+xfQYrvl8tNBvKfRz3xgiaI5MJ+fLmEOxbfXQIjleU1A0iA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -11880,7 +11884,7 @@ packages:
       '@unocss/cli': 0.58.6(rollup@4.13.0)
       '@unocss/core': 0.58.6
       '@unocss/extractor-arbitrary-variants': 0.58.6
-      '@unocss/postcss': 0.58.6(postcss@8.4.35)
+      '@unocss/postcss': 0.58.6(postcss@8.4.36)
       '@unocss/preset-attributify': 0.58.6
       '@unocss/preset-icons': 0.58.6
       '@unocss/preset-mini': 0.58.6
@@ -12599,7 +12603,7 @@ packages:
     dependencies:
       '@types/node': 20.11.27
       esbuild: 0.18.20
-      postcss: 8.4.35
+      postcss: 8.4.36
       rollup: 3.29.4
       sass: 1.72.0
     optionalDependencies:
@@ -12636,7 +12640,7 @@ packages:
     dependencies:
       '@types/node': 20.11.28
       esbuild: 0.19.5
-      postcss: 8.4.35
+      postcss: 8.4.36
       rollup: 4.13.0
       sass: 1.72.0
     optionalDependencies:
@@ -12673,7 +12677,7 @@ packages:
     dependencies:
       '@types/node': 20.8.7
       esbuild: 0.19.5
-      postcss: 8.4.35
+      postcss: 8.4.36
       rollup: 4.13.0
       sass: 1.72.0
     optionalDependencies:
