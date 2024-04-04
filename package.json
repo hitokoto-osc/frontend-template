@@ -81,7 +81,7 @@
     "prism-theme-vars": "0.2.4",
     "rollup": "4.14.0",
     "rollup-plugin-obfuscator": "1.1.0",
-    "sass": "1.72.0",
+    "sass": "1.74.1",
     "stylelint": "15.11.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-rational-order": "0.1.2",
