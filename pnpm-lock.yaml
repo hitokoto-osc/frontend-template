@@ -48,7 +48,7 @@ devDependencies:
     version: 6.21.0(eslint@8.57.0)(typescript@5.4.5)
   '@unhead/vue':
     specifier: ^1.7.4
-    version: 1.9.4(vue@3.4.15)
+    version: 1.9.5(vue@3.4.15)
   '@unocss/preset-attributify':
     specifier: ^0.58.0
     version: 0.58.9
@@ -3360,11 +3360,11 @@ packages:
       '@unhead/shared': 1.8.9
     dev: true
 
-  /@unhead/dom@1.9.4:
-    resolution: {integrity: sha512-nEaHOcCL0u56g4XOV5XGwRMFZ05eEINfp8nxVrPiIGLrS9BoFrZS7/6IYSkalkNRTmw8M5xqxt6BalBr594SaA==}
+  /@unhead/dom@1.9.5:
+    resolution: {integrity: sha512-t+JvAFX+Qkx+IEZFBQV5rZoj/6SKHd3tqXqxpsER588DWxU0J6dzvAVJrof/vRTMjJ1lM6B8SxKhZppSZ7H2iQ==}
     dependencies:
-      '@unhead/schema': 1.9.4
-      '@unhead/shared': 1.9.4
+      '@unhead/schema': 1.9.5
+      '@unhead/shared': 1.9.5
     dev: true
 
   /@unhead/schema@1.8.9:
@@ -3374,8 +3374,8 @@ packages:
       zhead: 2.2.4
     dev: true
 
-  /@unhead/schema@1.9.4:
-    resolution: {integrity: sha512-/J6KYQ+aqKO5uLDTU9BXfiRAfJ3mQNmF5gh3Iyd4qZaWfqjsDGYIaAe4xAGPnJxwBn6FHlnvQvZBSGqru1MByw==}
+  /@unhead/schema@1.9.5:
+    resolution: {integrity: sha512-n0upGPplBn5Y/4PIqKp7/tzOhz7USos5lFjf8UKvMNoOIitEa+avP2u7gRQ9yOhHmOAH9AXDeX7mhSvhO+Tqxw==}
     dependencies:
       hookable: 5.5.3
       zhead: 2.2.4
@@ -3387,21 +3387,21 @@ packages:
       '@unhead/schema': 1.8.9
     dev: true
 
-  /@unhead/shared@1.9.4:
-    resolution: {integrity: sha512-ErP6SUzPPRX9Df4fqGlwlLInoG+iBiH0nDudRuIpoFGyTnv1uO9BQ+lfFld8s1gI1WCdoBwVkISBp9/f/E/GLA==}
+  /@unhead/shared@1.9.5:
+    resolution: {integrity: sha512-WN2T8th1wYn4A1bb6o8Z59wNVMPkD6YdNQIlmSbEP9zuSYyVEh3BIxqSdxWM/xl8atN8fNwVW06knaF51VmKXA==}
     dependencies:
-      '@unhead/schema': 1.9.4
+      '@unhead/schema': 1.9.5
     dev: true
 
-  /@unhead/vue@1.9.4(vue@3.4.15):
-    resolution: {integrity: sha512-F37bDhhieWQJyXvFV8NmrOXoIVJMhxVI/0ZUDrI9uTkMCofjfKWDJ+Gz0iYdhYF9mjQ5BN+pM31Zpxi+fN5Cfg==}
+  /@unhead/vue@1.9.5(vue@3.4.15):
+    resolution: {integrity: sha512-L3yDB6Mwm92gJNPqZApMwfGluS0agR0HIizkXCKKz3WkZ+ef/negMwTNGpTtd+uqh/+hSyG73Bl4yySuPsD4nA==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
-      '@unhead/schema': 1.9.4
-      '@unhead/shared': 1.9.4
+      '@unhead/schema': 1.9.5
+      '@unhead/shared': 1.9.5
       hookable: 5.5.3
-      unhead: 1.9.4
+      unhead: 1.9.5
       vue: 3.4.15(typescript@5.4.5)
     dev: true
 
@@ -12092,12 +12092,12 @@ packages:
     requiresBuild: true
     dev: true
 
-  /unhead@1.9.4:
-    resolution: {integrity: sha512-QVU0y3KowRu2cLjXxfemTKNohK4vdEwyahoszlEnRz0E5BTNRZQSs8AnommorGmVM7DvB2t4dwWadB51wDlPzw==}
+  /unhead@1.9.5:
+    resolution: {integrity: sha512-eBKDPO9IMltRze9mHNYIVdosjlqoNFbwJRbykGT/7z/S5uYR2QRCXmIhEsJT4crffy6KQyB5ywLPqjRPx0s57A==}
     dependencies:
-      '@unhead/dom': 1.9.4
-      '@unhead/schema': 1.9.4
-      '@unhead/shared': 1.9.4
+      '@unhead/dom': 1.9.5
+      '@unhead/schema': 1.9.5
+      '@unhead/shared': 1.9.5
       hookable: 5.5.3
     dev: true
 
@@ -12929,7 +12929,7 @@ packages:
         optional: true
     dependencies:
       '@unhead/dom': 1.8.9
-      '@unhead/vue': 1.9.4(vue@3.4.15)
+      '@unhead/vue': 1.9.5(vue@3.4.15)
       critters: 0.0.22
       fs-extra: 11.2.0
       html-minifier: 4.0.0
