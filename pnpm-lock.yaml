@@ -32,7 +32,7 @@ importers:
         version: 1.6.0(rollup@4.14.0)(vue-i18n@9.9.1(vue@3.4.15(typescript@5.4.5)))
       '@julr/vite-plugin-validate-env':
         specifier: ^0.2.4
-        version: 0.2.5(vite@5.0.12(@types/node@20.8.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.31.0))(zod@3.23.6)
+        version: 0.2.5(vite@5.0.12(@types/node@20.8.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.31.0))(zod@3.23.7)
       '@rushstack/eslint-patch':
         specifier: 1.10.2
         version: 1.10.2
@@ -278,7 +278,7 @@ importers:
         version: 7.0.0
       zod:
         specifier: ^3.22.4
-        version: 3.23.6
+        version: 3.23.7
 
 packages:
 
@@ -7195,8 +7195,8 @@ packages:
   zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
 
-  zod@3.23.6:
-    resolution: {integrity: sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==}
+  zod@3.23.7:
+    resolution: {integrity: sha512-NBeIoqbtOiUMomACV/y+V3Qfs9+Okr18vR5c/5pHClPpufWOrsx8TENboDPe265lFdfewX2yBtNTLPvnmCxwog==}
 
 snapshots:
 
@@ -8659,14 +8659,14 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.0.8
 
-  '@julr/vite-plugin-validate-env@0.2.5(vite@5.0.12(@types/node@20.8.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.31.0))(zod@3.23.6)':
+  '@julr/vite-plugin-validate-env@0.2.5(vite@5.0.12(@types/node@20.8.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.31.0))(zod@3.23.7)':
     dependencies:
       '@poppinss/colors': 3.0.3
       '@poppinss/validator-lite': 1.0.3
       unconfig: 0.3.11
       vite: 5.0.12(@types/node@20.8.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.31.0)
     optionalDependencies:
-      zod: 3.23.6
+      zod: 3.23.7
 
   '@mdit-vue/plugin-component@1.0.0':
     dependencies:
@@ -15501,4 +15501,4 @@ snapshots:
 
   zhead@2.2.4: {}
 
-  zod@3.23.6: {}
+  zod@3.23.7: {}
