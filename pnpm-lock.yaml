@@ -167,7 +167,7 @@ importers:
         version: 8.4.38
       postcss-html:
         specifier: ^1.5.0
-        version: 1.6.0
+        version: 1.7.0
       postcss-scss:
         specifier: ^4.0.9
         version: 4.0.9(postcss@8.4.38)
@@ -191,7 +191,7 @@ importers:
         version: 15.11.0(typescript@5.4.5)
       stylelint-config-html:
         specifier: ^1.1.0
-        version: 1.1.0(postcss-html@1.6.0)(stylelint@15.11.0(typescript@5.4.5))
+        version: 1.1.0(postcss-html@1.7.0)(stylelint@15.11.0(typescript@5.4.5))
       stylelint-config-rational-order:
         specifier: 0.1.2
         version: 0.1.2
@@ -4445,8 +4445,8 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-tokens@8.0.3:
-    resolution: {integrity: sha512-UfJMcSJc+SEXEl9lH/VLHSZbThQyLpw1vLO1Lb+j4RWDvG3N2f7yj3PVQA3cmkTBNldJ9eFnM+xEXxHIXrYiJw==}
+  js-tokens@9.0.0:
+    resolution: {integrity: sha512-WriZw1luRMlmV3LGJaR6QOJjWwgLUTf89OwT2lUOyjX2dJGBwgmIkbcz+7WFZjrZM635JOIR517++e/67CP9dQ==}
 
   js-yaml@3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
@@ -5255,8 +5255,8 @@ packages:
       postcss: '>=5.0.0'
       postcss-syntax: '>=0.36.0'
 
-  postcss-html@1.6.0:
-    resolution: {integrity: sha512-OWgQ9/Pe23MnNJC0PL4uZp8k0EDaUvqpJFSiwFxOLClAhmD7UEisyhO3x5hVsD4xFrjReVTXydlrMes45dJ71w==}
+  postcss-html@1.7.0:
+    resolution: {integrity: sha512-MfcMpSUIaR/nNgeVS8AyvyDugXlADjN9AcV7e5rDfrF1wduIAGSkL4q2+wgrZgA3sHVAHLDO9FuauHhZYW2nBw==}
     engines: {node: ^12 || >=14}
 
   postcss-jsx@0.36.4:
@@ -12268,7 +12268,7 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-tokens@8.0.3: {}
+  js-tokens@9.0.0: {}
 
   js-yaml@3.14.1:
     dependencies:
@@ -13128,12 +13128,12 @@ snapshots:
     dependencies:
       htmlparser2: 3.10.1
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38)
+      postcss-syntax: 0.36.2(postcss-html@1.7.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38)
 
-  postcss-html@1.6.0:
+  postcss-html@1.7.0:
     dependencies:
       htmlparser2: 8.0.2
-      js-tokens: 8.0.3
+      js-tokens: 9.0.0
       postcss: 8.4.38
       postcss-safe-parser: 6.0.0(postcss@8.4.38)
 
@@ -13141,7 +13141,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.24.3
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38)
+      postcss-syntax: 0.36.2(postcss-html@1.7.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38)
     transitivePeerDependencies:
       - supports-color
 
@@ -13152,7 +13152,7 @@ snapshots:
   postcss-markdown@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39):
     dependencies:
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38)
+      postcss-syntax: 0.36.2(postcss-html@1.7.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38)
       remark: 10.0.1
       unist-util-find-all-after: 1.0.5
 
@@ -13213,11 +13213,11 @@ snapshots:
     dependencies:
       postcss: 8.4.38
 
-  postcss-syntax@0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38):
+  postcss-syntax@0.36.2(postcss-html@1.7.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38):
     dependencies:
       postcss: 8.4.38
     optionalDependencies:
-      postcss-html: 1.6.0
+      postcss-html: 1.7.0
       postcss-scss: 4.0.9(postcss@8.4.38)
 
   postcss-value-parser@3.3.1: {}
@@ -14042,9 +14042,9 @@ snapshots:
 
   style-search@0.1.0: {}
 
-  stylelint-config-html@1.1.0(postcss-html@1.6.0)(stylelint@15.11.0(typescript@5.4.5)):
+  stylelint-config-html@1.1.0(postcss-html@1.7.0)(stylelint@15.11.0(typescript@5.4.5)):
     dependencies:
-      postcss-html: 1.6.0
+      postcss-html: 1.7.0
       stylelint: 15.11.0(typescript@5.4.5)
 
   stylelint-config-rational-order@0.1.2:
@@ -14178,7 +14178,7 @@ snapshots:
       postcss-sass: 0.3.5
       postcss-scss: 2.1.1
       postcss-selector-parser: 3.1.2
-      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38)
+      postcss-syntax: 0.36.2(postcss-html@1.7.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38)
       postcss-value-parser: 3.3.1
       resolve-from: 4.0.0
       signal-exit: 3.0.7
