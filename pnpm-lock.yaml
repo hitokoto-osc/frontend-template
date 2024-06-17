@@ -26,7 +26,7 @@ importers:
         version: 18.6.3
       '@iconify/json':
         specifier: ^2.2.131
-        version: 2.2.219
+        version: 2.2.220
       '@intlify/unplugin-vue-i18n':
         specifier: ^1.4.0
         version: 1.6.0(rollup@4.14.0)(vue-i18n@9.9.1(vue@3.4.15(typescript@5.4.5)))
@@ -1504,8 +1504,8 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     deprecated: Use @eslint/object-schema instead
 
-  '@iconify/json@2.2.219':
-    resolution: {integrity: sha512-q8asqbM61woVZ9rJGm/gvW46i5vdeHrq4TqZQ/5wF5ypk4pAZU9+4qVa5NQE2MZngYkMPeO68PDGGl7WaEV8jQ==}
+  '@iconify/json@2.2.220':
+    resolution: {integrity: sha512-EpKZAK99E5qmgeOS5XOxzlzPaYXOkhLneypLFvbKIU3/KGmxGS/k6pgaEX6wTId4oF2HPGBDJnXyvckHiOHQiA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2412,6 +2412,11 @@ packages:
 
   acorn@8.11.3:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  acorn@8.12.0:
+    resolution: {integrity: sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -8782,7 +8787,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.2': {}
 
-  '@iconify/json@2.2.219':
+  '@iconify/json@2.2.220':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.2
@@ -10074,6 +10079,8 @@ snapshots:
   acorn@8.10.0: {}
 
   acorn@8.11.3: {}
+
+  acorn@8.12.0: {}
 
   acorn@8.8.2: {}
 
@@ -14520,7 +14527,7 @@ snapshots:
   terser@5.31.1:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.11.3
+      acorn: 8.12.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
