@@ -26,7 +26,7 @@ importers:
         version: 18.6.3
       '@iconify/json':
         specifier: ^2.2.131
-        version: 2.2.273
+        version: 2.2.274
       '@intlify/unplugin-vue-i18n':
         specifier: ^1.4.0
         version: 1.6.0(rollup@4.14.0)(vue-i18n@9.9.1(vue@3.4.15(typescript@5.6.3)))
@@ -1572,8 +1572,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@iconify/json@2.2.273':
-    resolution: {integrity: sha512-HTnvNpfeFxrMu39VaSTU+UE+ai75Yxa5BbuHmQz9EAtgyPqTqxLgBXPX1sPeMQP8Fxc2X9UrmDwbH5dOEaWthw==}
+  '@iconify/json@2.2.274':
+    resolution: {integrity: sha512-wU4zS3eMLZgPFHieCRGile/sVz7QXD3jiCaaQ72quMH4Tf8FzO2WH10un1g96YaNLY8CTKDV4MNZDO2/LtkwFA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3592,8 +3592,8 @@ packages:
   electron-to-chromium@1.4.681:
     resolution: {integrity: sha512-1PpuqJUFWoXZ1E54m8bsLPVYwIVCRzvaL+n5cjigGga4z854abDnFRc+cTa2th4S79kyGqya/1xoR7h+Y5G5lg==}
 
-  electron-to-chromium@1.5.62:
-    resolution: {integrity: sha512-t8c+zLmJHa9dJy96yBZRXGQYoiCEnHYgFwn1asvSPZSUdVxnB62A4RASd7k41ytG3ErFBA0TpHlKg9D9SQBmLg==}
+  electron-to-chromium@1.5.63:
+    resolution: {integrity: sha512-ddeXKuY9BHo/mw145axlyWjlJ1UBt4WK3AlvkT7W2AbqfRQoacVoRUCF6wL3uIx/8wT9oLKXzI+rFqHHscByaA==}
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -9051,7 +9051,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@iconify/json@2.2.273':
+  '@iconify/json@2.2.274':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.2
@@ -10923,7 +10923,7 @@ snapshots:
   browserslist@4.24.2:
     dependencies:
       caniuse-lite: 1.0.30001680
-      electron-to-chromium: 1.5.62
+      electron-to-chromium: 1.5.63
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
@@ -11580,7 +11580,7 @@ snapshots:
 
   electron-to-chromium@1.4.681: {}
 
-  electron-to-chromium@1.5.62: {}
+  electron-to-chromium@1.5.63: {}
 
   emoji-regex@10.3.0: {}
 
