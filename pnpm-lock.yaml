@@ -50,7 +50,7 @@ importers:
         version: 6.21.0(eslint@8.57.1)(typescript@5.7.2)
       '@unhead/vue':
         specifier: ^1.7.4
-        version: 1.11.13(vue@3.4.15(typescript@5.7.2))
+        version: 1.11.14(vue@3.4.15(typescript@5.7.2))
       '@unocss/preset-attributify':
         specifier: ^0.58.0
         version: 0.58.9
@@ -2069,26 +2069,26 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  '@unhead/dom@1.11.13':
-    resolution: {integrity: sha512-8Bpo3e50i49/z0TMiskQk3OqUVJpWOO0cnEEydJeFnjsPczDH76H3mWLvB11cv1B/rjLdBiPgui7yetFta5LCw==}
+  '@unhead/dom@1.11.14':
+    resolution: {integrity: sha512-FaHCWo9JR4h7PCpSRaXuMC6ifXOuBzlI0PD1MmUcxND2ayDl1d6DauIbN8TUf9TDRxNkrK1Ehb0OCXjC1ZJtrg==}
 
   '@unhead/dom@1.8.9':
     resolution: {integrity: sha512-qY4CUVNKEM7lEAcTz5t71QYca+NXgUY5RwhSzB6sBBzZxQTiFOeTVKC6uWXU0N+3jBUdP/zdD3iN1JIjziDlng==}
 
-  '@unhead/schema@1.11.13':
-    resolution: {integrity: sha512-fIpQx6GCpl99l4qJXsPqkXxO7suMccuLADbhaMSkeXnVEi4ZIle+l+Ri0z+GHAEpJj17FMaQdO5n9FMSOMUxkw==}
+  '@unhead/schema@1.11.14':
+    resolution: {integrity: sha512-V9W9u5tF1/+TiLqxu+Qvh1ShoMDkPEwHoEo4DKdDG6ko7YlbzFfDxV6el9JwCren45U/4Vy/4Xi7j8OH02wsiA==}
 
   '@unhead/schema@1.8.9':
     resolution: {integrity: sha512-Cumjt2uLfBMEXflvq7Nk8KNqa/JS4MlRGWkjXx/uUXJ1vUeQqeMV8o3hrnRvDDoTXr9LwPapTMUbtClN3TSBgw==}
 
-  '@unhead/shared@1.11.13':
-    resolution: {integrity: sha512-EiJ3nsEtf6dvZ6OwVYrrrrCUl4ZE/9GTjpexEMti8EJXweSuL7SifNNXtIFk7UMoM0ULYxb7K/AKQV/odwoZyQ==}
+  '@unhead/shared@1.11.14':
+    resolution: {integrity: sha512-41Qt4PJKYVrEGOTXgBJLRYrEu3S7n5stoB4TFC6312CIBVedXqg7voHQurn32LVDjpfJftjLa2ggCjpqdqoRDw==}
 
   '@unhead/shared@1.8.9':
     resolution: {integrity: sha512-0o4+CBCi9EnTKPF6cEuLacnUHUkF0u/FfiKrWnKWUiB8wTD1v3UCf5ZCrNCjuJmKHTqj6ZtZ2hIfXsqWfc+3tA==}
 
-  '@unhead/vue@1.11.13':
-    resolution: {integrity: sha512-s5++LqsNM01rkMQwtc4W19cP1fXC81o4YMyL+Kaqh9X0OPLeWnjONAh0U/Z2CIXBqhJHI+DoNXmDACXyuWPPxg==}
+  '@unhead/vue@1.11.14':
+    resolution: {integrity: sha512-6nfi7FsZ936gscmj+1nUB1pybiFMFbnuEFo7B/OY2klpLWsYDUOVvpsJhbu7C3u7wkTlJXglmAk6jdd8I7WgZA==}
     peerDependencies:
       vue: '>=2.7 || >=3'
 
@@ -3592,8 +3592,8 @@ packages:
   electron-to-chromium@1.4.681:
     resolution: {integrity: sha512-1PpuqJUFWoXZ1E54m8bsLPVYwIVCRzvaL+n5cjigGga4z854abDnFRc+cTa2th4S79kyGqya/1xoR7h+Y5G5lg==}
 
-  electron-to-chromium@1.5.71:
-    resolution: {integrity: sha512-dB68l59BI75W1BUGVTAEJy45CEVuEGy9qPVVQ8pnHyHMn36PLPPoE1mjLH+lo9rKulO3HC2OhbACI/8tCqJBcA==}
+  electron-to-chromium@1.5.72:
+    resolution: {integrity: sha512-ZpSAUOZ2Izby7qnZluSrAlGgGQzucmFbN0n64dYzocYxnxV5ufurpj3VgEe4cUp7ir9LmeLxNYo8bVnlM8bQHw==}
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -5406,8 +5406,8 @@ packages:
   node-releases@2.0.14:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
 
-  node-releases@2.0.18:
-    resolution: {integrity: sha512-d9VeXT4SJ7ZeOqGX6R5EM022wpL+eWPooLI+5UpWn2jCT1aosUQEhQP214x33Wkwx3JQMvIm+tIoVOdodFS40g==}
+  node-releases@2.0.19:
+    resolution: {integrity: sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==}
 
   normalize-package-data@2.5.0:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
@@ -6895,8 +6895,8 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  unhead@1.11.13:
-    resolution: {integrity: sha512-I7yyvqRfpPPzXuCG7HKZkgAWJDbzXDDEVyib4C/78HREqhNGHVSyo4TqX1h1xB5cx7WYc21HHDRT2/8YkqOy2w==}
+  unhead@1.11.14:
+    resolution: {integrity: sha512-XmXW0aZyX9kGk9ejCKCSvv/J4T3Rt4hoAe2EofM+nhG+zwZ7AArUMK/0F/fj6FTkfgY0u0/JryE00qUDULgygA==}
 
   unherit@1.1.3:
     resolution: {integrity: sha512-Ft16BJcnapDKp0+J/rqFC3Rrk6Y/Ng4nzsC028k2jdDII/rdZ7Wd3pPT/6+vIIxRagwRc9K0IUX0Ra4fKvw+WQ==}
@@ -9658,17 +9658,17 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@unhead/dom@1.11.13':
+  '@unhead/dom@1.11.14':
     dependencies:
-      '@unhead/schema': 1.11.13
-      '@unhead/shared': 1.11.13
+      '@unhead/schema': 1.11.14
+      '@unhead/shared': 1.11.14
 
   '@unhead/dom@1.8.9':
     dependencies:
       '@unhead/schema': 1.8.9
       '@unhead/shared': 1.8.9
 
-  '@unhead/schema@1.11.13':
+  '@unhead/schema@1.11.14':
     dependencies:
       hookable: 5.5.3
       zhead: 2.2.4
@@ -9678,21 +9678,21 @@ snapshots:
       hookable: 5.5.3
       zhead: 2.2.4
 
-  '@unhead/shared@1.11.13':
+  '@unhead/shared@1.11.14':
     dependencies:
-      '@unhead/schema': 1.11.13
+      '@unhead/schema': 1.11.14
 
   '@unhead/shared@1.8.9':
     dependencies:
       '@unhead/schema': 1.8.9
 
-  '@unhead/vue@1.11.13(vue@3.4.15(typescript@5.7.2))':
+  '@unhead/vue@1.11.14(vue@3.4.15(typescript@5.7.2))':
     dependencies:
-      '@unhead/schema': 1.11.13
-      '@unhead/shared': 1.11.13
+      '@unhead/schema': 1.11.14
+      '@unhead/shared': 1.11.14
       defu: 6.1.4
       hookable: 5.5.3
-      unhead: 1.11.13
+      unhead: 1.11.14
       vue: 3.4.15(typescript@5.7.2)
 
   '@unocss/astro@0.58.9(rollup@4.14.0)(vite@5.0.12(@types/node@20.8.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.37.0))':
@@ -10979,8 +10979,8 @@ snapshots:
   browserslist@4.24.2:
     dependencies:
       caniuse-lite: 1.0.30001687
-      electron-to-chromium: 1.5.71
-      node-releases: 2.0.18
+      electron-to-chromium: 1.5.72
+      node-releases: 2.0.19
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
   buffer-crc32@0.2.13: {}
@@ -11660,7 +11660,7 @@ snapshots:
 
   electron-to-chromium@1.4.681: {}
 
-  electron-to-chromium@1.5.71: {}
+  electron-to-chromium@1.5.72: {}
 
   emoji-regex@10.3.0: {}
 
@@ -13772,7 +13772,7 @@ snapshots:
 
   node-releases@2.0.14: {}
 
-  node-releases@2.0.18: {}
+  node-releases@2.0.19: {}
 
   normalize-package-data@2.5.0:
     dependencies:
@@ -15450,11 +15450,11 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  unhead@1.11.13:
+  unhead@1.11.14:
     dependencies:
-      '@unhead/dom': 1.11.13
-      '@unhead/schema': 1.11.13
-      '@unhead/shared': 1.11.13
+      '@unhead/dom': 1.11.14
+      '@unhead/schema': 1.11.14
+      '@unhead/shared': 1.11.14
       hookable: 5.5.3
 
   unherit@1.1.3:
@@ -16018,7 +16018,7 @@ snapshots:
   vite-ssg@0.23.6(critters@0.0.22)(vite@5.0.12(@types/node@20.8.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.37.0))(vue-router@4.2.5(vue@3.4.15(typescript@5.7.2)))(vue@3.4.15(typescript@5.7.2)):
     dependencies:
       '@unhead/dom': 1.8.9
-      '@unhead/vue': 1.11.13(vue@3.4.15(typescript@5.7.2))
+      '@unhead/vue': 1.11.14(vue@3.4.15(typescript@5.7.2))
       fs-extra: 11.2.0
       html-minifier: 4.0.0
       html5parser: 2.0.2
