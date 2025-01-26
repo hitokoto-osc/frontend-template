@@ -148,8 +148,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0
       lint-staged:
-        specifier: 15.4.2
-        version: 15.4.2
+        specifier: 15.4.3
+        version: 15.4.3
       lodash:
         specifier: 4.17.21
         version: 4.17.21
@@ -5275,8 +5275,8 @@ packages:
   linkify-it@4.0.1:
     resolution: {integrity: sha512-C7bfi1UZmoj8+PQx22XyeXCuBlokoyWQL5pWSP+EI6nzRylyThouddufc2c1NDIcP9k5agmN9fLpA7VNJfIiqw==}
 
-  lint-staged@15.4.2:
-    resolution: {integrity: sha512-gCqzB/Li281uZJgReNci+oXXqUEdrFAQAzTE/LwoxxiEuP41vozNe4BATS+4ehdqkWn+Z6bGc3EDcBja3npBVw==}
+  lint-staged@15.4.3:
+    resolution: {integrity: sha512-FoH1vOeouNh1pw+90S+cnuoFwRfUD9ijY2GKy5h7HS3OR7JVir2N2xrsa0+Twc1B7cW72L+88geG5cW4wIhn7g==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -8025,11 +8025,6 @@ packages:
   yaml@2.3.3:
     resolution: {integrity: sha512-zw0VAJxgeZ6+++/su5AFoqBbZbrEakwu+X0M5HmcwUiBL7AzcuPKjj5we4xfQLp78LkEMpD0cOnUhmgOVy3KdQ==}
     engines: {node: '>= 14'}
-
-  yaml@2.6.1:
-    resolution: {integrity: sha512-7r0XPzioN/Q9kXBro/XPnA6kznR73DHq+GXh5ON7ZozRO6aMjbmiBuKste2wslTFkC5d1dw0GooOCepZXJ2SAg==}
-    engines: {node: '>= 14'}
-    hasBin: true
 
   yaml@2.7.0:
     resolution: {integrity: sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA==}
@@ -13883,7 +13878,7 @@ snapshots:
     dependencies:
       uc.micro: 1.0.6
 
-  lint-staged@15.4.2:
+  lint-staged@15.4.3:
     dependencies:
       chalk: 5.4.1
       commander: 13.1.0
@@ -17195,11 +17190,9 @@ snapshots:
     dependencies:
       eslint-visitor-keys: 3.4.3
       lodash: 4.17.21
-      yaml: 2.6.1
+      yaml: 2.7.0
 
   yaml@2.3.3: {}
-
-  yaml@2.6.1: {}
 
   yaml@2.7.0: {}
 
