@@ -64,7 +64,7 @@
     "eslint-plugin-html": "7.1.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-n": "^16.2.0",
-    "eslint-plugin-prettier": "5.2.3",
+    "eslint-plugin-prettier": "5.2.4",
     "eslint-plugin-promise": "6.6.0",
     "eslint-plugin-vue": "9.33.0",
     "husky": "8.0.3",
