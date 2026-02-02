@@ -103,8 +103,8 @@ importers:
         specifier: 0.0.22
         version: 0.0.22
       cross-env:
-        specifier: 7.0.3
-        version: 7.0.3
+        specifier: 10.1.0
+        version: 10.1.0
       cypress:
         specifier: 13.17.0
         version: 13.17.0
@@ -1155,6 +1155,9 @@ packages:
   '@emnapi/wasi-threads@1.0.1':
     resolution: {integrity: sha512-iIBu7mwkq4UQGeMEM8bLwNK962nXdhodeScX4slfQnRhEMMzvYivHhutCIk8uojvmASXXPC2WNEjwxFWk72Oqw==}
 
+  '@epic-web/invariant@1.0.0':
+    resolution: {integrity: sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA==}
+
   '@esbuild/aix-ppc64@0.25.0':
     resolution: {integrity: sha512-O7vun9Sf8DFjH2UtqK8Ku3LkquL9SZL8OLY1T5NZkA34+wG3OQF7cl4Ql8vdNzM6fzBbYfLaiRLIOZ+2FOCgBQ==}
     engines: {node: '>=18'}
@@ -1775,21 +1778,25 @@ packages:
     resolution: {integrity: sha512-mMB1AvqzTH25rbUo1eRfvFzNqBopX6aRlDmO1fIVVzIWi6YJNKckxbkGaatez4hH/n86IR6aEdZFM3qBUjn3Tg==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@oxc-resolver/binding-linux-arm64-musl@4.2.0':
     resolution: {integrity: sha512-9oPBU8Yb35z15/14LzALn/8rRwwrtfe19l25N1MRZVSONGiOwfzWNqDNjWiDdyW+EUt/hlylmFOItZmreL6iIw==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@oxc-resolver/binding-linux-x64-gnu@4.2.0':
     resolution: {integrity: sha512-8wU4fwHb0b45i0qMBJ24UYBEtaLyvYWUOqVVCn0SpQZ1mhWWC8dvD6+zIVAKRVex/cKdgzi3imXoKGIDqVEu9w==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@oxc-resolver/binding-linux-x64-musl@4.2.0':
     resolution: {integrity: sha512-5CS2wlGxzESPJCj4NlNGr73QCku75VpGtkwNp8qJF4hLELKAzkoqIB0eBbcvNPg8m2rB7YeXb1u+puGUKXDhNQ==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@oxc-resolver/binding-wasm32-wasi@4.2.0':
     resolution: {integrity: sha512-VOLpvmVAQZjvj/7Et/gYzW6yBqL9VKjLWOGaFiQ7cvTpY9R9d/1mrNKEuP3beDHF2si2fM5f2pl9bL+N4tvwiA==}
@@ -1922,36 +1929,43 @@ packages:
     resolution: {integrity: sha512-x+uJ6MAYRlHGe9wi4HQjxpaKHPM3d3JjqqCkeC5gpnnI6OWovLdXTpfa8trjxPLnWKyBsSi5kne+146GAxFt4A==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.14.0':
     resolution: {integrity: sha512-nrRw8ZTQKg6+Lttwqo6a2VxR9tOroa2m91XbdQ2sUUzHoedXlsyvY1fN4xWdqz8PKmf4orDwejxXHjh7YBGUCA==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.14.0':
     resolution: {integrity: sha512-xV0d5jDb4aFu84XKr+lcUJ9y3qpIWhttO3Qev97z8DKLXR62LC3cXT/bMZXrjLF9X+P5oSmJTzAhqwUbY96PnA==}
     cpu: [ppc64le]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.14.0':
     resolution: {integrity: sha512-SDDhBQwZX6LPRoPYjAZWyL27LbcBo7WdBFWJi5PI9RPCzU8ijzkQn7tt8NXiXRiFMJCVpkuMkBf4OxSxVMizAw==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-s390x-gnu@4.14.0':
     resolution: {integrity: sha512-RxB/qez8zIDshNJDufYlTT0ZTVut5eCpAZ3bdXDU9yTxBzui3KhbGjROK2OYTTor7alM7XBhssgoO3CZ0XD3qA==}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.14.0':
     resolution: {integrity: sha512-C6y6z2eCNCfhZxT9u+jAM2Fup89ZjiG5pIzZIDycs1IwESviLxwkQcFRGLjnDrP+PT+v5i4YFvlcfAs+LnreXg==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.14.0':
     resolution: {integrity: sha512-i0QwbHYfnOMYsBEyjxcwGu5SMIi9sImDVjDg087hpzXqhBSosxkE7gyIYFHgfFl4mr7RrXksIBZ4DoLoP4FhJg==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.14.0':
     resolution: {integrity: sha512-Fq52EYb0riNHLBTAcL0cun+rRwyZ10S9vKzhGKKgeD+XbwunszSY0rVMco5KbOsTlwovP2rTOkiII/fQ4ih/zQ==}
@@ -3402,13 +3416,17 @@ packages:
   critters@0.0.22:
     resolution: {integrity: sha512-NU7DEcQZM2Dy8XTKFHxtdnIM/drE312j2T4PCVaSUcS0oBeyT/NImpRw/Ap0zOr/1SE7SgPK9tGPg1WK/sVakw==}
 
-  cross-env@7.0.3:
-    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
-    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+  cross-env@10.1.0:
+    resolution: {integrity: sha512-GsYosgnACZTADcmEyJctkJIoqAhHjttw7RsFrVoJNXbsWWqaq6Ym+7kZjq6mS45O0jij6vtiReppKQEtqWy6Dw==}
+    engines: {node: '>=20'}
     hasBin: true
 
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
+    engines: {node: '>= 8'}
+
+  cross-spawn@7.0.6:
+    resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
   crypt@0.0.2:
@@ -9049,6 +9067,8 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@epic-web/invariant@1.0.0': {}
+
   '@esbuild/aix-ppc64@0.25.0':
     optional: true
 
@@ -11515,11 +11535,18 @@ snapshots:
       postcss: 8.4.38
       postcss-media-query-parser: 0.2.3
 
-  cross-env@7.0.3:
+  cross-env@10.1.0:
     dependencies:
-      cross-spawn: 7.0.3
+      '@epic-web/invariant': 1.0.0
+      cross-spawn: 7.0.6
 
   cross-spawn@7.0.3:
+    dependencies:
+      path-key: 3.1.1
+      shebang-command: 2.0.0
+      which: 2.0.2
+
+  cross-spawn@7.0.6:
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
@@ -14199,7 +14226,7 @@ snapshots:
     dependencies:
       htmlparser2: 3.10.1
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
 
   postcss-html@1.8.0:
     dependencies:
@@ -14212,7 +14239,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.24.3
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
     transitivePeerDependencies:
       - supports-color
 
@@ -14223,7 +14250,7 @@ snapshots:
   postcss-markdown@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39):
     dependencies:
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
       remark: 10.0.1
       unist-util-find-all-after: 1.0.5
 
@@ -14288,7 +14315,7 @@ snapshots:
     dependencies:
       postcss: 8.4.38
 
-  postcss-syntax@0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-scss@2.1.1)(postcss@7.0.39):
+  postcss-syntax@0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39):
     dependencies:
       postcss: 7.0.39
     optionalDependencies:
@@ -15293,7 +15320,7 @@ snapshots:
       postcss-sass: 0.3.5
       postcss-scss: 2.1.1
       postcss-selector-parser: 3.1.2
-      postcss-syntax: 0.36.2(postcss-html@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4(postcss-syntax@0.36.2(postcss-html@1.8.0)(postcss-scss@4.0.9(postcss@8.4.38))(postcss@8.4.38))(postcss@7.0.39))(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
       postcss-value-parser: 3.3.1
       resolve-from: 4.0.0
       signal-exit: 3.0.7
