@@ -83,7 +83,7 @@ importers:
         version: 3.4.15
       '@vue/eslint-config-prettier':
         specifier: 8.0.0
-        version: 8.0.0(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.4)
+        version: 8.0.0(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.5)
       '@vue/eslint-config-typescript':
         specifier: 12.0.0
         version: 12.0.0(eslint-plugin-vue@9.33.0(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(typescript@5.9.3)
@@ -134,7 +134,7 @@ importers:
         version: 16.6.2(eslint@8.57.1(supports-color@8.1.1))
       eslint-plugin-prettier:
         specifier: 5.5.6
-        version: 5.5.6(eslint-config-prettier@9.1.2(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.4)
+        version: 5.5.6(eslint-config-prettier@9.1.2(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.5)
       eslint-plugin-promise:
         specifier: 6.6.0
         version: 6.6.0(eslint@8.57.1(supports-color@8.1.1))
@@ -172,8 +172,8 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9(postcss@8.4.38)
       prettier:
-        specifier: 3.8.4
-        version: 3.8.4
+        specifier: 3.8.5
+        version: 3.8.5
       prism-theme-vars:
         specifier: 0.2.4
         version: 0.2.4
@@ -4128,7 +4128,7 @@ packages:
   git-raw-commits@2.0.11:
     resolution: {integrity: sha512-VnctFhw+xfj8Va1xtfEqCUD2XDrbAPSJx+hSrE5K7fGdjZruW7XV+QOrN7LF/RJyvspRiD2I0asWsxFp0ya26A==}
     engines: {node: '>=10'}
-    deprecated: This package is no longer maintained. For the JavaScript API, please use @conventional-changelog/git-client instead.
+    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
     hasBin: true
 
   glob-parent@3.1.0:
@@ -5814,13 +5814,13 @@ packages:
     resolution: {integrity: sha512-SxToR7P8Y2lWmv/kTzVLC1t/GDI2WGjMwNhLLE9qtH8Q13C+aEmuRlzDst4Up4s0Wc8sF2M+J57iB3cMLqftfg==}
     engines: {node: '>=6.0.0'}
 
-  prettier@3.8.3:
-    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+  prettier@3.8.4:
+    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
     engines: {node: '>=14'}
     hasBin: true
 
-  prettier@3.8.4:
-    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
+  prettier@3.8.5:
+    resolution: {integrity: sha512-zxcTTCedNGJM4R8sj/Cq/F0W/c4iE0afWBcBwMTRtw4WHYP9TWkYjdiH3npPRUYsXQCPR0hTU9yjovOu+E6EQA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -7775,7 +7775,7 @@ snapshots:
       '@babel/code-frame': 7.24.2
       '@babel/generator': 7.24.1
       '@babel/helper-compilation-targets': 7.23.6
-      '@babel/helper-module-transforms': 7.23.3(@babel/core@7.24.0)
+      '@babel/helper-module-transforms': 7.23.3(@babel/core@7.24.0(supports-color@8.1.1))
       '@babel/helpers': 7.24.1
       '@babel/parser': 7.27.0
       '@babel/template': 7.24.0
@@ -7967,7 +7967,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helper-module-transforms@7.23.3(@babel/core@7.24.0)':
+  '@babel/helper-module-transforms@7.23.3(@babel/core@7.24.0(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.24.0(supports-color@8.1.1)
       '@babel/helper-environment-visitor': 7.22.20
@@ -10110,7 +10110,7 @@ snapshots:
 
   '@vue-macros/reactivity-transform@1.1.6(vue@3.4.15(typescript@5.9.3))':
     dependencies:
-      '@babel/parser': 7.27.0
+      '@babel/parser': 7.28.0
       '@vue-macros/common': 1.16.1(vue@3.4.15(typescript@5.9.3))
       '@vue/compiler-core': 3.5.13
       '@vue/shared': 3.5.13
@@ -10251,7 +10251,7 @@ snapshots:
 
   '@vue/compiler-core@3.5.13':
     dependencies:
-      '@babel/parser': 7.27.0
+      '@babel/parser': 7.28.0
       '@vue/shared': 3.5.13
       entities: 4.5.0
       estree-walker: 2.0.2
@@ -10298,7 +10298,7 @@ snapshots:
 
   '@vue/compiler-sfc@3.5.13':
     dependencies:
-      '@babel/parser': 7.27.0
+      '@babel/parser': 7.28.0
       '@vue/compiler-core': 3.5.13
       '@vue/compiler-dom': 3.5.13
       '@vue/compiler-ssr': 3.5.13
@@ -10330,12 +10330,12 @@ snapshots:
 
   '@vue/devtools-api@6.5.1': {}
 
-  '@vue/eslint-config-prettier@8.0.0(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.4)':
+  '@vue/eslint-config-prettier@8.0.0(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.5)':
     dependencies:
       eslint: 8.57.1(supports-color@8.1.1)
       eslint-config-prettier: 8.10.0(eslint@8.57.1(supports-color@8.1.1))
-      eslint-plugin-prettier: 5.5.5(eslint-config-prettier@8.10.0(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.4)
-      prettier: 3.8.4
+      eslint-plugin-prettier: 5.5.5(eslint-config-prettier@8.10.0(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.5)
+      prettier: 3.8.5
     transitivePeerDependencies:
       - '@types/eslint'
 
@@ -10759,7 +10759,7 @@ snapshots:
 
   ast-kit@1.4.2:
     dependencies:
-      '@babel/parser': 7.27.0
+      '@babel/parser': 7.28.0
       pathe: 2.0.3
 
   ast-walker-scope@0.5.0(rollup@4.14.0):
@@ -11924,19 +11924,19 @@ snapshots:
       resolve: 1.22.8
       semver: 7.6.0
 
-  eslint-plugin-prettier@5.5.5(eslint-config-prettier@8.10.0(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.4):
+  eslint-plugin-prettier@5.5.5(eslint-config-prettier@8.10.0(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.5):
     dependencies:
       eslint: 8.57.1(supports-color@8.1.1)
-      prettier: 3.8.4
+      prettier: 3.8.5
       prettier-linter-helpers: 1.0.1
       synckit: 0.11.12
     optionalDependencies:
       eslint-config-prettier: 8.10.0(eslint@8.57.1(supports-color@8.1.1))
 
-  eslint-plugin-prettier@5.5.6(eslint-config-prettier@9.1.2(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.4):
+  eslint-plugin-prettier@5.5.6(eslint-config-prettier@9.1.2(eslint@8.57.1(supports-color@8.1.1)))(eslint@8.57.1(supports-color@8.1.1))(prettier@3.8.5):
     dependencies:
       eslint: 8.57.1(supports-color@8.1.1)
-      prettier: 3.8.4
+      prettier: 3.8.5
       prettier-linter-helpers: 1.0.1
       synckit: 0.11.13
     optionalDependencies:
@@ -13355,7 +13355,7 @@ snapshots:
 
   magic-string@0.30.17:
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.0
+      '@jridgewell/sourcemap-codec': 1.5.4
 
   magic-string@0.30.5:
     dependencies:
@@ -13568,7 +13568,7 @@ snapshots:
 
   mlly@1.7.4:
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.5.4
@@ -14118,9 +14118,9 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier@3.8.3: {}
-
   prettier@3.8.4: {}
+
+  prettier@3.8.5: {}
 
   pretty-bytes@5.6.0: {}
 
@@ -15660,7 +15660,7 @@ snapshots:
 
   unplugin@1.16.1:
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
       webpack-virtual-modules: 0.6.2
 
   unplugin@1.5.0:
@@ -15957,7 +15957,7 @@ snapshots:
       html5parser: 2.0.2
       jsdom: 23.0.1
       kolorist: 1.8.0
-      prettier: 3.8.3
+      prettier: 3.8.4
       vite: 5.0.12(@types/node@20.12.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.43.1)
       vue: 3.4.15(typescript@5.9.3)
       yargs: 17.7.2
