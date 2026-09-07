@@ -75,7 +75,7 @@
     "markdown-it-prism": "2.3.0",
     "nprogress": "0.2.0",
     "postcss": "8.4.38",
-    "postcss-html": "^1.5.0",
+    "postcss-html": "^2.0.0",
     "postcss-scss": "^4.0.9",
     "prettier": "3.9.6",
     "prism-theme-vars": "0.2.4",
