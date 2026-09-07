@@ -54,7 +54,7 @@
     "autoprefixer": "10.4.19",
     "axios": "1.6.8",
     "critters": "0.0.22",
-    "cross-env": "7.0.3",
+    "cross-env": "10.1.0",
     "cypress": "13.17.0",
     "dayjs": "1.11.10",
     "eslint": "8.57.1",
