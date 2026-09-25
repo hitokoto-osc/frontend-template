@@ -32,7 +32,7 @@ importers:
         version: 1.6.0(rollup@4.14.0)(supports-color@8.1.1)(vue-i18n@9.9.1(vue@3.4.15(typescript@5.9.3)))
       '@julr/vite-plugin-validate-env':
         specifier: ^0.2.4
-        version: 0.2.5(vite@5.0.12(@types/node@20.12.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.43.1))(zod@3.25.76)
+        version: 0.2.5(vite@5.0.12(@types/node@20.12.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.43.1))(zod@4.6.5)
       '@rushstack/eslint-patch':
         specifier: 1.16.1
         version: 1.16.1
@@ -277,8 +277,8 @@ importers:
         specifier: 7.0.0
         version: 7.0.0
       zod:
-        specifier: ^3.22.4
-        version: 3.25.76
+        specifier: ^4.0.0
+        version: 4.6.5
 
 packages:
 
@@ -7707,8 +7707,8 @@ packages:
   zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
 
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+  zod@4.6.5:
+    resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
 
 snapshots:
 
@@ -9228,14 +9228,14 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.0.8
 
-  '@julr/vite-plugin-validate-env@0.2.5(vite@5.0.12(@types/node@20.12.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.43.1))(zod@3.25.76)':
+  '@julr/vite-plugin-validate-env@0.2.5(vite@5.0.12(@types/node@20.12.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.43.1))(zod@4.6.5)':
     dependencies:
       '@poppinss/colors': 3.0.3
       '@poppinss/validator-lite': 1.0.3
       unconfig: 0.3.11
       vite: 5.0.12(@types/node@20.12.7)(sass@1.74.1)(sugarss@2.0.0)(terser@5.43.1)
     optionalDependencies:
-      zod: 3.25.76
+      zod: 4.6.5
 
   '@mdit-vue/plugin-component@1.0.0':
     dependencies:
@@ -16482,4 +16482,4 @@ snapshots:
 
   zhead@2.2.4: {}
 
-  zod@3.25.76: {}
+  zod@4.6.5: {}
